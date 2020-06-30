@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lifeisgg.attendance.dao.LogDao">
+    <resultMap type="com.lifeisgg.attendance.entity.Log" id="LogMap">
+        <result property="lid" column="lid" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="rid" column="rid" jdbcType="INTEGER"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="lDate" column="lDate" jdbcType="TIMESTAMP"/>
+        <result property="during" column="during" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--获取日志多表查询，user，room，log表-->
+    <resultMap type="com.lifeisgg.attendance.entity.LogDetail" id="logDetail">
+        <result property="lid" column="lid" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="rid" column="rid" jdbcType="INTEGER"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="lDate" column="lDate" jdbcType="TIMESTAMP"/>
+        <result property="during" column="during" jdbcType="INTEGER"/>
+        <result property="room.rname" column="rname" jdbcType="VARCHAR"/>
+        <result property="room.address" column="address" jdbcType="VARCHAR"/>
+        <result property="room.del" column="del" jdbcType="INTEGER"/>
+        <result property="user.realName" column="realName" jdbcType="VARCHAR"/>
+        <result property="user.phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="user.email" column="email" jdbcType="VARCHAR"/>
+        <result property="user.level" column="level" jdbcType="INTEGER"/>
+        <result property="wxuser.openid" column="openid" jdbcType="VARCHAR"/>
+        <result property="wxuser.nickName" column="nickName" jdbcType="VARCHAR"/>
+        <result property="wxuser.avatarUrl" column="avatarUrl" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--通过实体作为筛选条件查询日志,返回对象List<logDetail>,根据时间逆序输出-->
+    <select id="getLogListDetail" resultMap="logDetail">
+        select
+        *
+        from attendance2.log log ,attendance2.room room ,attendance2.wxuser wxuser,attendance2.user user
+        <where>
+            log.rid = room.rid and log.uid = wxuser.uid and log.uid = user.uid
+            <if test="lid != null">
+                and log.lid = #{lid}
+            </if>
+            <if test="uid != null">
+                and log.uid = #{uid}
+            </if>
+            <if test="rid != null">
+                and log.rid = #{rid}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="lDate != null">
+                and lDate = #{lDate}
+            </if>
+            <if test="during != null">
+                and during = #{during}
+            </if>
+        </where>
+        order by lDate desc
+        <!--获取最新的一条-->
+        <if test="limit != null">
+            limit #{limit}
+        </if>
+    </select>
+
+    <!--通过实体作为筛选条件查询日志一条，返回为LogDetail,根据时间逆序输出-->
+    <select id="getLogDetail" resultMap="logDetail">
+        select
+        *
+        from attendance2.log log ,attendance2.room room ,attendance2.wxuser wxuser,attendance2.user user
+        <where>
+            log.rid = room.rid and log.uid = wxuser.uid and log.uid = user.uid
+            <if test="lid != null">
+                and log.lid = #{lid}
+            </if>
+            <if test="uid != null">
+                and log.uid = #{uid}
+            </if>
+            <if test="rid != null">
+                and log.rid = #{rid}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="lDate != null">
+                and lDate = #{lDate}
+            </if>
+            <if test="during != null">
+                and during = #{during}
+            </if>
+        </where>
+        order by lDate desc
+        <!--获取最新的一条-->
+        <if test="limit != null">
+            limit #{limit}
+        </if>
+    </select>
+
+
+    <resultMap type="com.lifeisgg.attendance.entity.LogDuring" id="duringLst">
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="allDuration" column="allDuration" jdbcType="INTEGER"/>
+        <result property="lDate" column="lDate" jdbcType="TIMESTAMP"/>
+        <result property="openid" column="openid" jdbcType="VARCHAR"/>
+        <result property="nickName" column="nickName" jdbcType="VARCHAR"/>
+        <result property="avatarUrl" column="avatarUrl" jdbcType="VARCHAR"/>
+        <result property="realName" column="realName" jdbcType="VARCHAR"/>
+        <result property="rname" column="rname" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+        <result property="del" column="del" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--通过实体作为筛选条件计算时间总和,逆序输出-->
+    <select id="getDurationList" resultMap="duringLst">
+        select
+        log.uid,sum(during) allDuration,nickName,avatarUrl,openid,realName
+         <if test="lDate != null">
+           ,date_format(lDate,'%Y-%m-%d') as lDate
+        </if>
+        <if test="rid != null">
+            ,log.rid,rname,address,del
+        </if>
+        from attendance2.log log,attendance2.wxuser wxuser,attendance2.room room,attendance2.user user
+        <where>
+            log.uid = wxuser.uid and log.rid = room.rid and log.uid = user.uid
+            <if test="uid != null">
+                and log.uid = #{uid}
+            </if>
+            <if test="rid != null">
+                and log.rid = #{rid}
+            </if>
+             <if test="lDate != null">
+                and to_days(lDate) = to_days(#{lDate})
+            </if>
+        </where>
+        group by log.uid,nickName,avatarUrl,openid
+        <if test="lDate != null">
+            ,date_format(lDate,'%Y-%m-%d')
+        </if>
+        <if test="rid != null">
+            ,log.rid,rname,address,del
+        </if>
+        order by allDuration desc
+    </select>
+
+        <!--通过实体作为筛选条件计算本周时间总和,逆序输出-->
+    <select id="getWeekDurationList" resultMap="duringLst">
+        select
+        log.uid,sum(during) allDuration,nickName,avatarUrl,openid,realName
+        <if test="rid != null">
+            ,log.rid,rname,address,del
+        </if>
+        from attendance2.log log,attendance2.wxuser wxuser,attendance2.room room,attendance2.user user
+        <where>
+            log.uid = wxuser.uid and log.rid = room.rid and log.uid = user.uid and
+            YEARWEEK(DATE_FORMAT(lDate,'%Y-%m-%d')) = YEARWEEK(NOW())
+            <if test="uid != null">
+                and log.uid = #{uid}
+            </if>
+            <if test="rid != null">
+                and log.rid = #{rid}
+            </if>
+
+        </where>
+        group by log.uid,nickName,avatarUrl,openid
+        <if test="rid != null">
+            ,log.rid,rname,address,del
+        </if>
+        order by allDuration desc
+    </select>
+
+            <!--通过实体作为筛选条件计算本月时间总和,逆序输出-->
+    <select id="getMonthDurationList" resultMap="duringLst">
+        select
+        log.uid,sum(during) allDuration,nickName,avatarUrl,openid,realName
+        <if test="rid != null">
+            ,log.rid,rname,address,del
+        </if>
+        from attendance2.log log,attendance2.wxuser wxuser,attendance2.room room,attendance2.user user
+        <where>
+            log.uid = wxuser.uid and log.rid = room.rid and log.uid = user.uid and
+            DATE_FORMAT(lDate,'%Y%m') = DATE_FORMAT(CURDATE(),'%Y%m')
+            <if test="uid != null">
+                and log.uid = #{uid}
+            </if>
+            <if test="rid != null">
+                and log.rid = #{rid}
+            </if>
+
+        </where>
+        group by log.uid,nickName,avatarUrl,openid
+        <if test="rid != null">
+            ,log.rid,rname,address,del
+        </if>
+        order by allDuration desc
+    </select>
+
+
+
+
+
+
+        <!--    获取去过的房间以及在这个房间的总时长-->
+        <resultMap type="hashmap" id="RoomAndDuring">
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="rid" column="rid" jdbcType="INTEGER"/>
+        <result property="lDate" column="lDate" jdbcType="TIMESTAMP"/>
+        <result property="roomDuring" column="roomDuring" jdbcType="INTEGER"/>
+        <result property="logCount" column="logCount" jdbcType="INTEGER"/>
+        <result property="rname" column="rname" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+        <result property="del" column="del" jdbcType="INTEGER"/>
+    </resultMap>
+
+<!--    获取去过的房间以及在这个房间的总时长-->
+    <select id="getRoomDurationList" resultMap="RoomAndDuring">
+        select
+        uid,log.rid,sum(during) roomDuring,count(log.lid) logCount,rname,del,address
+         <if test="lDate != null">
+           ,date_format(lDate,'%Y-%m-%d') as lDate
+        </if>
+        from attendance2.log log,attendance2.room room
+        <where>
+           log.rid = room.rid
+
+            <if test="uid != null">
+                and log.uid = #{uid}
+            </if>
+            <if test="lDate != null">
+                and to_days(lDate) = to_days(#{lDate})
+            </if>
+        </where>
+        group by uid,rid
+         <if test="lDate != null">
+            ,date_format(lDate,'%Y-%m-%d')
+        </if>
+        order by roomDuring desc
+    </select>
+
+
+
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="lid" useGeneratedKeys="true">
+
+                insert into attendance2.log(uid, rid, status, lDate, during)
+                values (#{uid}, #{rid}, #{status}, #{lDate}, #{during})
+
+    </insert>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="LogMap">
+
+
+
+
+
+
+
+
+
+
+                                                                                        select
+                                                                                          lid, uid, rid, status, lDate, during
+                                                                                        from attendance2.log
+                                                                                        where lid = #{lid}
+
+
+
+
+
+
+
+
+
+
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="LogMap">
+
+
+
+
+
+
+
+
+
+
+                                                                                        select
+                                                                                          lid, uid, rid, status, lDate, during
+                                                                                        from attendance2.log
+                                                                                        limit #{offset}, #{limit}
+
+
+
+
+
+
+
+
+
+
+    </select>
+
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update attendance2.log
+        <set>
+            <if test="uid != null">
+                uid = #{uid},
+            </if>
+            <if test="rid != null">
+                rid = #{rid},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="lDate != null">
+                lDate = #{lDate},
+            </if>
+            <if test="during != null">
+                during = #{during},
+            </if>
+        </set>
+        where lid = #{lid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+
+
+
+
+
+
+
+
+
+
+                                                                                        delete from attendance2.log where lid = #{lid}
+
+
+
+
+
+
+
+
+
+
+    </delete>
+</mapper>

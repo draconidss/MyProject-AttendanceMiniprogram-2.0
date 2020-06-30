@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "u-back-top": "/uview-ui/components/u-back-top/u-back-top",
+    "u-subsection": "/uview-ui/components/u-subsection/u-subsection",
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item"
+  }
+}

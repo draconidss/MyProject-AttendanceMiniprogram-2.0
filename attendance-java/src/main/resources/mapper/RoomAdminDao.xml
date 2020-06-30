@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lifeisgg.attendance.dao.RoomAdminDao">
+
+    <resultMap type="com.lifeisgg.attendance.entity.RoomAdmin" id="RoomAdminMap">
+        <result property="aid" column="aid" jdbcType="INTEGER"/>
+        <result property="rid" column="rid" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="user.realName" column="realName" jdbcType="VARCHAR"/>
+        <result property="wxuser.nickName" column="nickName" jdbcType="VARCHAR"/>
+        <result property="wxuser.avatarUrl" column="avatarUrl" jdbcType="VARCHAR"/>
+        <result property="notice" column="notice" jdbcType="VARCHAR"/>
+        <result property="ndate" column="nDate" jdbcType="TIMESTAMP"/>
+        <result property="del" column="del" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="getAdminList" resultMap="RoomAdminMap">
+        select
+         *
+        from attendance2.roomadmin roomadmin,attendance2.user user,attendance2.wxuser wxuser
+        <where>
+        roomadmin.uid = user.uid and roomadmin.uid = wxuser.uid
+        <if test="aid != null">
+                and aid = #{aid}
+            </if>
+            <if test="rid != null">
+                and roomadmin.rid = #{rid}
+            </if>
+            <if test="uid != null">
+                and roomadmin.uid = #{uid}
+            </if>
+            <if test="notice != null and notice != ''">
+                and notice = #{notice}
+            </if>
+            <if test="ndate != null">
+                and nDate = #{ndate}
+            </if>
+            <if test="del != null">
+                and roomadmin.del = #{del}
+            </if>
+        </where>
+        order by nDate desc
+    </select>
+
+     <insert id="insert" keyProperty="aid" useGeneratedKeys="true">
+        insert into attendance2.roomadmin(rid, uid, notice,nDate,del)
+        values (#{rid}, #{uid}, #{notice},now(),1)
+    </insert>
+
+        <update id="update">
+        update attendance2.roomadmin
+        <set>
+            <if test="del != null">
+                del = #{del}
+            </if>
+        </set>
+        where aid = #{aid}
+    </update>
+
+
+
+</mapper>

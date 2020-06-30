@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-field": "/uview-ui/components/u-field/u-field",
+    "u-verification-code": "/uview-ui/components/u-verification-code/u-verification-code",
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item"
+  }
+}

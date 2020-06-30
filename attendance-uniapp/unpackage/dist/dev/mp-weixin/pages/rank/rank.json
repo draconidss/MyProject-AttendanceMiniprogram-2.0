@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-back-top": "/uview-ui/components/u-back-top/u-back-top",
+    "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "u-subsection": "/uview-ui/components/u-subsection/u-subsection",
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item",
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
+  }
+}

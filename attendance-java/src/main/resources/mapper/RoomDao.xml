@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lifeisgg.attendance.dao.RoomDao">
+
+    <resultMap type="com.lifeisgg.attendance.entity.Room" id="RoomMap">
+        <result property="rid" column="rid" jdbcType="INTEGER"/>
+        <result property="rname" column="rname" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+        <result property="del" column="del" jdbcType="INTEGER"/>
+    </resultMap>
+
+        <select id="getRoomList" resultMap="RoomMap">
+        select
+          rid, rname, address, del
+        from attendance2.room
+        <where>
+            <if test="rid != null">
+                and rid = #{rid}
+            </if>
+            <if test="rname != null and rname != ''">
+                and rname = #{rname}
+            </if>
+            <if test="address != null and address != ''">
+                and address = #{address}
+            </if>
+            <if test="del != null">
+                and del = #{del}
+            </if>
+        </where>
+        order by rid desc
+    </select>
+
+            <select id="getRoom" resultMap="RoomMap">
+        select
+          rid, rname, address, del
+        from attendance2.room
+        <where>
+            <if test="rid != null">
+                and rid = #{rid}
+            </if>
+            <if test="rname != null and rname != ''">
+                and rname = #{rname}
+            </if>
+            <if test="address != null and address != ''">
+                and address = #{address}
+            </if>
+            <if test="del != null">
+                and del = #{del}
+            </if>
+        </where>
+    </select>
+
+
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="RoomMap">
+        select
+          rid, rname, address, del
+        from attendance2.room
+        where rid = #{rid}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="RoomMap">
+        select
+          rid, rname, address, del
+        from attendance2.room
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="RoomMap">
+        select
+          rid, rname, address, del
+        from attendance2.room
+        <where>
+            <if test="rid != null">
+                and rid = #{rid}
+            </if>
+            <if test="rname != null and rname != ''">
+                and rname = #{rname}
+            </if>
+            <if test="address != null and address != ''">
+                and address = #{address}
+            </if>
+            <if test="del != null">
+                and del = #{del}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="rid" useGeneratedKeys="true">
+        insert into attendance2.room(rname, address)
+        values (#{rname}, #{address})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update attendance2.room
+        <set>
+            <if test="rname != null and rname != ''">
+                rname = #{rname},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+            <if test="del != null">
+                del = #{del},
+            </if>
+        </set>
+        where rid = #{rid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from attendance2.room where rid = #{rid}
+    </delete>
+
+</mapper>

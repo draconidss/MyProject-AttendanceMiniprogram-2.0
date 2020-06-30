@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+view,
+scroll-view {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+::-webkit-scrollbar,::-webkit-scrollbar,::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent;
+}
+.u-scroll-box {
+  position: relative;
+}
+.u-scroll-view {
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+.u-tab-item {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+.u-tab-bar {
+  position: absolute;
+  bottom: 0;
+}
+.u-tabs-scorll-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+

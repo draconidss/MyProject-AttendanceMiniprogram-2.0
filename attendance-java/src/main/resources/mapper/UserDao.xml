@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lifeisgg.attendance.dao.UserDao">
+
+    <resultMap type="com.lifeisgg.attendance.entity.User" id="UserMap">
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="realName" column="realName" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="level" column="level" jdbcType="INTEGER"/>
+         <result property="wxuser.openid" column="openid" jdbcType="VARCHAR"/>
+        <result property="wxuser.nickName" column="nickName" jdbcType="VARCHAR"/>
+        <result property="wxuser.avatarUrl" column="avatarUrl" jdbcType="VARCHAR"/>
+        <result property="wxuser.regDate" column="regDate" jdbcType="TIMESTAMP"/>
+        <result property="wxuser.lastLoginDate" column="lastLoginDate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+        <!--通过实体作为筛选条件查询-->
+    <select id="getUserList" resultMap="UserMap">
+        select
+          *
+        from attendance2.user
+        <where>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="phone != null and phone != ''">
+                and phone = #{phone}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+            <if test="realName != null and realName != ''">
+                and realName = #{realName}
+            </if>
+            <if test="password != null and password != ''">
+                and password = #{password}
+            </if>
+            <if test="level != null">
+                and level = #{level}
+            </if>
+        </where>
+    </select>
+
+        <select id="getUser" resultMap="UserMap">
+        select
+          *
+        from attendance2.user user,attendance2.wxuser wxuser
+        <where>
+            user.uid = wxuser.uid
+            <if test="uid != null">
+                and user.uid = #{uid}
+            </if>
+            <if test="phone != null and phone != ''">
+                and phone = #{phone}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+            <if test="realName != null and realName != ''">
+                and realName = #{realName}
+            </if>
+            <if test="password != null and password != ''">
+                and password = #{password}
+            </if>
+            <if test="level != null">
+                and level = #{level}
+            </if>
+        </where>
+    </select>
+
+
+
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="UserMap">
+        select
+          uid, phone, email,realName, password, level
+        from attendance2.user
+        where uid = #{uid}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="UserMap">
+        select
+          uid, phone, email, realName,password, level
+        from attendance2.user
+        limit #{offset}, #{limit}
+    </select>
+
+
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="uid" useGeneratedKeys="true">
+        insert into attendance2.user(phone, email, realName,password)
+        values (#{phone}, #{email}, #{realName},#{password})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update attendance2.user
+        <set>
+            <if test="phone != null and phone != ''">
+                phone = #{phone},
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email},
+            </if>
+            <if test="realName != null and realName != ''">
+                and realName = #{realName}
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="level != null">
+                level = #{level},
+            </if>
+        </set>
+        where uid = #{uid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from attendance2.user where uid = #{uid}
+    </delete>
+
+</mapper>

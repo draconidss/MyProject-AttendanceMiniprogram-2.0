@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lifeisgg.attendance.dao.MemberDao">
+    <resultMap type="com.lifeisgg.attendance.entity.Member" id="MemberMap">
+        <result property="rid" column="rid" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="isAdmin" column="isAdmin" jdbcType="INTEGER"/>
+        <result property="log" column="log" jdbcType="INTEGER"/>
+        <result property="duration" column="duration" jdbcType="INTEGER"/>
+    </resultMap>
+
+        <resultMap type="com.lifeisgg.attendance.entity.Member" id="MemberDetail">
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="rid" column="rid" jdbcType="INTEGER"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="isAdmin" column="isAdmin" jdbcType="INTEGER"/>
+        <result property="log" column="log" jdbcType="INTEGER"/>
+        <result property="duration" column="duration" jdbcType="INTEGER"/>
+        <result property="lDate" column="lDate" jdbcType="TIMESTAMP"/>
+        <result property="room.rname" column="rname" jdbcType="VARCHAR"/>
+        <result property="room.address" column="address" jdbcType="VARCHAR"/>
+        <result property="room.del" column="del" jdbcType="INTEGER"/>
+        <result property="user.uid" column="uid" jdbcType="INTEGER"/>
+        <result property="user.realName" column="realName" jdbcType="VARCHAR"/>
+        <result property="user.phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="user.email" column="email" jdbcType="VARCHAR"/>
+        <result property="user.level" column="level" jdbcType="INTEGER"/>
+        <result property="wxuser.openid" column="openid" jdbcType="VARCHAR"/>
+        <result property="wxuser.nickName" column="nickName" jdbcType="VARCHAR"/>
+        <result property="wxuser.avatarUrl" column="avatarUrl" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <!--通过实体作为筛选条件查询。返回数组-->
+    <select id="getMemberList" resultMap="MemberDetail">
+         select
+        *
+        from attendance2.member member,attendance2.room room ,attendance2.wxuser wxuser,attendance2.user user
+        <where>
+        member.uid = user.uid and member.uid = wxuser.uid and member.rid=room.rid
+            <if test="rid != null">
+                and member.rid = #{rid}
+            </if>
+            <if test="uid != null">
+                and member.uid = #{uid}
+            </if>
+            <if test="status != null">
+                and member.status = #{status}
+            </if>
+            <if test="isAdmin != null">
+                and member.isAdmin = #{isAdmin}
+            </if>
+            <if test="log != null">
+                and member.log = #{log}
+            </if>
+            <if test="duration != null">
+                and member.duration = #{duration}
+            </if>
+        </where>
+        order by member.duration desc
+    </select>
+
+        <!--通过实体作为筛选条件查询,返回一个对象-->
+    <select id="getMember" resultMap="MemberDetail">
+        select
+        *
+        from attendance2.member member,attendance2.room room ,attendance2.wxuser wxuser,attendance2.user user,attendance2.log log
+        <where>
+        member.uid=user.uid and member.uid=wxuser.uid and member.rid=room.rid and member.uid = log.uid and member.rid = log.rid
+            <if test="rid != null">
+                and member.rid = #{rid}
+            </if>
+            <if test="uid != null">
+                and member.uid = #{uid}
+            </if>
+            <if test="status != null">
+                and member.status = #{status}
+            </if>
+            <if test="isAdmin != null">
+                and member.isAdmin = #{isAdmin}
+            </if>
+             <if test="log != null">
+                and member.log = #{log}
+            </if>
+            <if test="duration != null">
+                and member.duration = #{duration}
+            </if>
+        </where>
+        order by lDate desc
+         limit 1
+    </select>
+
+
+
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="MemberMap">
+
+                select
+                  rid, uid, status, isAdmin
+                from attendance2.member
+                limit #{offset}, #{limit}
+
+    </select>
+
+
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="" useGeneratedKeys="true">
+
+                insert into attendance2.member(rid, uid, status, isAdmin,log,duration)
+                values (#{rid}, #{uid}, #{status}, #{isAdmin}, #{log}, #{duration})
+
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update attendance2.member
+        <set>
+            <if test="rid != null">
+                rid = #{rid},
+            </if>
+            <if test="uid != null">
+                uid = #{uid},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="isAdmin != null">
+                isAdmin = #{isAdmin},
+            </if>
+            <if test="log != null">
+                log = #{log},
+            </if>
+            <if test="duration != null">
+                duration = #{duration}
+            </if>
+        </set>
+        <where>
+            <if test="rid != null">
+                and rid = #{rid}
+            </if>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+
+        </where>
+    </update>
+</mapper>

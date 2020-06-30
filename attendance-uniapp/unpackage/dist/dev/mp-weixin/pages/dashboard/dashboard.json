@@ -1,0 +1,23 @@
+{
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-back-top": "/uview-ui/components/u-back-top/u-back-top",
+    "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-collapse": "/uview-ui/components/u-collapse/u-collapse",
+    "u-collapse-item": "/uview-ui/components/u-collapse-item/u-collapse-item",
+    "u-count-to": "/uview-ui/components/u-count-to/u-count-to",
+    "u-subsection": "/uview-ui/components/u-subsection/u-subsection",
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-popup": "/uview-ui/components/u-popup/u-popup",
+    "u-field": "/uview-ui/components/u-field/u-field",
+    "u-tag": "/uview-ui/components/u-tag/u-tag",
+    "u-empty": "/uview-ui/components/u-empty/u-empty",
+    "u-calendar": "/uview-ui/components/u-calendar/u-calendar",
+    "drag-button": "/components/drag-button/drag-button"
+  }
+}

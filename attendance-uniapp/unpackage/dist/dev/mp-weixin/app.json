@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/log/log",
+    "pages/rank/rank",
+    "pages/profile/profile",
+    "pages/dashboard/dashboard",
+    "pages/profile/profileDemo",
+    "pages/home/homeDemo",
+    "pages/dashboard/dashboardDemo",
+    "pages/dashboard/user",
+    "pages/dashboard/room",
+    "pages/dashboard/roomDemo",
+    "pages/dashboard/addNotice",
+    "pages/profile/reference"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#0be881",
+    "borderStyle": "white",
+    "backgroundColor": "#00152a",
+    "height": "130px",
+    "fontSize": "35px",
+    "iconWidth": "130px",
+    "spacing": "20px",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home-tap.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/log/log",
+        "iconPath": "static/images/tabbar/log.png",
+        "selectedIconPath": "static/images/tabbar/log-tap.png",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/dashboard/dashboard",
+        "iconPath": "static/images/tabbar/dashboard.png",
+        "selectedIconPath": "static/images/tabbar/dashboard-tap.png",
+        "text": "控制台"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "iconPath": "static/images/tabbar/rank.png",
+        "selectedIconPath": "static/images/tabbar/rank-tap.png",
+        "text": "活跃度"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/images/tabbar/profile.png",
+        "selectedIconPath": "static/images/tabbar/profile-tap.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置判断远近的显示。"
+    }
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap97.json"
+}

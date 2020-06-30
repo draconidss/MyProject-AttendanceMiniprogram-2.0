@@ -1,0 +1,21 @@
+{
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-mask": "/uview-ui/components/u-mask/u-mask",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-select": "/uview-ui/components/u-select/u-select",
+    "drag-button": "/components/drag-button/drag-button",
+    "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+    "u-count-to": "/uview-ui/components/u-count-to/u-count-to",
+    "u-subsection": "/uview-ui/components/u-subsection/u-subsection",
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item",
+    "u-empty": "/uview-ui/components/u-empty/u-empty",
+    "u-collapse": "/uview-ui/components/u-collapse/u-collapse",
+    "u-collapse-item": "/uview-ui/components/u-collapse-item/u-collapse-item",
+    "u-divider": "/uview-ui/components/u-divider/u-divider",
+    "led": "/components/mehaotian-numled/mehaotian-numled",
+    "uni-fab": "/components/uni-fab/uni-fab"
+  }
+}
