@@ -185,7 +185,7 @@
 									<view class="cu-tag badge" :class="wxuserInfo.gender==1?'cuIcon-male bg-blue':'cuIcon-male bg-blue'">
 									</view>
 								</view>
-								<u-button slot="right-icon" type="success" :ripple="true" :plain="true" size="mini">已实名</u-button>
+								<!-- <u-button slot="right-icon" type="success" :ripple="true" :plain="true" size="mini">已实名</u-button> -->
 							</u-cell-item>
 
 							<u-cell-item :arrow="false" :center="true" title="uid" :value="userDetail.uid">

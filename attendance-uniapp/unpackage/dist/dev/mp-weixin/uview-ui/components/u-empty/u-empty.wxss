@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-empty.data-v-30cc525c {
+.u-empty.data-v-7be0ad1c {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -19,10 +19,10 @@
           align-items: center;
   height: 100%;
 }
-.u-image.data-v-30cc525c {
+.u-image.data-v-7be0ad1c {
   margin-bottom: 20rpx;
 }
-.u-slot-wrap.data-v-30cc525c {
+.u-slot-wrap.data-v-7be0ad1c {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;

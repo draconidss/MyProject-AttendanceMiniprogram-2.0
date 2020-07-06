@@ -3,20 +3,20 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-navbar.data-v-2efe1366 {
+.u-navbar.data-v-4349be06 {
   width: 100%;
 }
-.u-navbar-fixed.data-v-2efe1366 {
+.u-navbar-fixed.data-v-4349be06 {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 991;
 }
-.u-status-bar.data-v-2efe1366 {
+.u-status-bar.data-v-4349be06 {
   width: 100%;
 }
-.u-navbar-inner.data-v-2efe1366 {
+.u-navbar-inner.data-v-4349be06 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -28,7 +28,7 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.u-back-wrap.data-v-2efe1366 {
+.u-back-wrap.data-v-4349be06 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -43,11 +43,11 @@
           flex-grow: 0;
   padding: 14rpx 14rpx 14rpx 24rpx;
 }
-.u-back-text.data-v-2efe1366 {
+.u-back-text.data-v-4349be06 {
   padding-left: 4rpx;
   font-size: 30rpx;
 }
-.u-navbar-content-title.data-v-2efe1366 {
+.u-navbar-content-title.data-v-4349be06 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -68,19 +68,19 @@
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
 }
-.u-navbar-centent-slot.data-v-2efe1366 {
+.u-navbar-centent-slot.data-v-4349be06 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
 }
-.u-title.data-v-2efe1366 {
+.u-title.data-v-4349be06 {
   line-height: 1;
   font-size: 32rpx;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
 }
-.u-navbar-right.data-v-2efe1366 {
+.u-navbar-right.data-v-4349be06 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -94,7 +94,7 @@
   -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
-.u-slot-content.data-v-2efe1366 {
+.u-slot-content.data-v-4349be06 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;

@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-cell.data-v-55f1e0f4 {
+.u-cell.data-v-8d89d8d8 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,20 +18,20 @@
   background-color: #fff;
   text-align: left;
 }
-.u-cell_title.data-v-55f1e0f4 {
+.u-cell_title.data-v-8d89d8d8 {
   font-size: 28rpx;
 }
-.u-cell__left-icon-wrap.data-v-55f1e0f4 {
+.u-cell__left-icon-wrap.data-v-8d89d8d8 {
   margin-right: 10rpx;
   font-size: 32rpx;
 }
-.u-cell__right-icon-wrap.data-v-55f1e0f4 {
+.u-cell__right-icon-wrap.data-v-8d89d8d8 {
   margin-left: 10rpx;
   color: #969799;
   font-size: 28rpx;
 }
-.u-cell__left-icon-wrap.data-v-55f1e0f4,
-.u-cell__right-icon-wrap.data-v-55f1e0f4 {
+.u-cell__left-icon-wrap.data-v-8d89d8d8,
+.u-cell__right-icon-wrap.data-v-8d89d8d8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -40,7 +40,7 @@
           align-items: center;
   height: 48rpx;
 }
-.u-cell-border.data-v-55f1e0f4:after {
+.u-cell-border.data-v-8d89d8d8:after {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -53,32 +53,32 @@
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
 }
-.u-cell-border.data-v-55f1e0f4 {
+.u-cell-border.data-v-8d89d8d8 {
   position: relative;
 }
-.u-border-gap.data-v-55f1e0f4:after {
+.u-border-gap.data-v-8d89d8d8:after {
   left: 32rpx !important;
 }
-.u-cell__label.data-v-55f1e0f4 {
+.u-cell__label.data-v-8d89d8d8 {
   margin-top: 6rpx;
   font-size: 26rpx;
   line-height: 36rpx;
   color: #909399;
 }
-.u-cell__value.data-v-55f1e0f4 {
+.u-cell__value.data-v-8d89d8d8 {
   overflow: hidden;
   text-align: right;
   vertical-align: middle;
   color: #909399;
   font-size: 26rpx;
 }
-.u-cell__title.data-v-55f1e0f4,
-.u-cell__value.data-v-55f1e0f4 {
+.u-cell__title.data-v-8d89d8d8,
+.u-cell__value.data-v-8d89d8d8 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
 }
-.u-cell--required.data-v-55f1e0f4 {
+.u-cell--required.data-v-8d89d8d8 {
   overflow: visible;
   display: -webkit-box;
   display: -webkit-flex;
@@ -87,7 +87,7 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.u-cell--required.data-v-55f1e0f4:before {
+.u-cell--required.data-v-8d89d8d8:before {
   position: absolute;
   content: '*';
   left: 8px;

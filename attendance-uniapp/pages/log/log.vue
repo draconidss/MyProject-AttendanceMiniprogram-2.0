@@ -84,13 +84,13 @@
 					</u-cell-group>
 
 					<u-cell-group v-else-if="currentTabs == 0">
-						<u-cell-item :title="'从'+startDate+'到'+endDate" :label="'时长'+Math.floor(allDuration2/1000/3600)+'时'+Math.floor(allDuration2/1000/60%60)+'分,共'+logList_Len2+'条日志'"
-						 :arrow="false" @tap="showCale" v-if="startDate!=null&&endDate!=null">
+						<u-cell-item :title="'从'+startDate+'到'+endDate" value="日期筛选" :label="'时长'+Math.floor(allDuration2/1000/3600)+'时'+Math.floor(allDuration2/1000/60%60)+'分,共'+logList_Len2+'条日志'"
+						 :arrow="true"  @tap="showCale" v-if="startDate!=null&&endDate!=null">
 							<view slot="icon" class="cuIcon-calendar padding-right-sm padding-bottom-lg text-blue"></view>
-							<u-button slot="right-icon" type="primary" :ripple="true" :plain="true" size="mini" @click="showCale">日期筛选</u-button>
+							<!-- <u-button slot="right-icon" type="primary" :ripple="true" :plain="true" size="mini" @click="showCale">日期筛选</u-button> -->
 						</u-cell-item>
 
-						<navigator url="../home/home" open-type="switchTab" v-if="logList.length == 0">
+						<navigator url="../home/home" open-type="switchTab" v-if="logList.length == 0&&logList_Len == 0">
 							<u-cell-item title="您还没有日志记录,试着去进入一个实验室吧" :arrow="true" icon="warning">
 							</u-cell-item>
 						</navigator>
@@ -319,7 +319,7 @@
 
 			var that = this
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
-			// global.getUserInfo()
+			global.getUserInfo()
 			that.userInfo = uni.getStorageSync("userInfo")
 
 			if (that.userInfo != null) {

@@ -3,10 +3,10 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-btn.data-v-b4434cb4::after {
+.u-btn.data-v-8babf774::after {
   border: none;
 }
-.u-btn.data-v-b4434cb4 {
+.u-btn.data-v-8babf774 {
   position: relative;
   border: 0;
   display: inline-block;
@@ -29,7 +29,7 @@
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-.u-hairline-border.data-v-b4434cb4:after {
+.u-hairline-border.data-v-8babf774:after {
   content: ' ';
   position: absolute;
   pointer-events: none;
@@ -46,10 +46,10 @@
   border: 1px solid currentColor;
   z-index: 1;
 }
-.u-bold-border.data-v-b4434cb4 {
+.u-bold-border.data-v-8babf774 {
   border: 1px solid #ffffff;
 }
-.u-wave-ripple.data-v-b4434cb4 {
+.u-wave-ripple.data-v-8babf774 {
   z-index: 0;
   position: absolute;
   -webkit-border-radius: 100%;
@@ -64,7 +64,7 @@
   -webkit-transform-origin: center;
           transform-origin: center;
 }
-.u-wave-ripple.u-wave-active.data-v-b4434cb4 {
+.u-wave-ripple.u-wave-active.data-v-8babf774 {
   opacity: 0;
   -webkit-transform: scale(2);
           transform: scale(2);
@@ -73,23 +73,23 @@
   transition: opacity 1s linear, transform 0.4s linear;
   transition: opacity 1s linear, transform 0.4s linear, -webkit-transform 0.4s linear;
 }
-.u-round-circle.data-v-b4434cb4 {
+.u-round-circle.data-v-8babf774 {
   -webkit-border-radius: 100rpx;
           border-radius: 100rpx;
 }
-.u-round-circle.data-v-b4434cb4::after {
+.u-round-circle.data-v-8babf774::after {
   -webkit-border-radius: 100rpx;
           border-radius: 100rpx;
 }
-.u-loading.data-v-b4434cb4::after {
+.u-loading.data-v-8babf774::after {
   background-color: rgba(255, 255, 255, 0.35);
 }
-.u-size-default.data-v-b4434cb4 {
+.u-size-default.data-v-8babf774 {
   font-size: 30rpx;
   height: 80rpx;
   line-height: 80rpx;
 }
-.u-size-medium.data-v-b4434cb4 {
+.u-size-medium.data-v-8babf774 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: inline-flex;
@@ -99,7 +99,7 @@
   line-height: 70rpx;
   padding: 0 80rpx;
 }
-.u-size-mini.data-v-b4434cb4 {
+.u-size-mini.data-v-8babf774 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: inline-flex;
@@ -110,52 +110,52 @@
   line-height: 50rpx;
   padding: 0 20rpx;
 }
-.u-primary-plain-hover.data-v-b4434cb4 {
+.u-primary-plain-hover.data-v-8babf774 {
   color: #ffffff !important;
   background: #2b85e4 !important;
 }
-.u-default-plain-hover.data-v-b4434cb4 {
+.u-default-plain-hover.data-v-8babf774 {
   color: #2b85e4 !important;
   background: #ecf5ff !important;
 }
-.u-success-plain-hover.data-v-b4434cb4 {
+.u-success-plain-hover.data-v-8babf774 {
   color: #ffffff !important;
   background: #18b566 !important;
 }
-.u-warning-plain-hover.data-v-b4434cb4 {
+.u-warning-plain-hover.data-v-8babf774 {
   color: #ffffff !important;
   background: #f29100 !important;
 }
-.u-error-plain-hover.data-v-b4434cb4 {
+.u-error-plain-hover.data-v-8babf774 {
   color: #ffffff !important;
   background: #dd6161 !important;
 }
-.u-info-plain-hover.data-v-b4434cb4 {
+.u-info-plain-hover.data-v-8babf774 {
   color: #ffffff !important;
   background: #82848a !important;
 }
-.u-default-hover.data-v-b4434cb4 {
+.u-default-hover.data-v-8babf774 {
   color: #2b85e4 !important;
   border-color: #2b85e4 !important;
   background-color: #ecf5ff !important;
 }
-.u-primary-hover.data-v-b4434cb4 {
+.u-primary-hover.data-v-8babf774 {
   background: #2b85e4 !important;
   color: #fff;
 }
-.u-success-hover.data-v-b4434cb4 {
+.u-success-hover.data-v-8babf774 {
   background: #18b566 !important;
   color: #fff;
 }
-.u-info-hover.data-v-b4434cb4 {
+.u-info-hover.data-v-8babf774 {
   background: #82848a !important;
   color: #fff;
 }
-.u-warning-hover.data-v-b4434cb4 {
+.u-warning-hover.data-v-8babf774 {
   background: #f29100 !important;
   color: #fff;
 }
-.u-error-hover.data-v-b4434cb4 {
+.u-error-hover.data-v-8babf774 {
   background: #dd6161 !important;
   color: #fff;
 }

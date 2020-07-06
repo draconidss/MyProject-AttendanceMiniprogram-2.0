@@ -2,6 +2,7 @@
 	<view>
 		<u-toast ref="uToast" />
 
+
 		<!-- 		<view class="cu-modal show" v-if="!statusInfo">
 			<view class="cu-dialog" >
 				<u-button type="success" :loading="enterRoomLoading" :ripple="true" @click="getRoomList">
@@ -11,7 +12,7 @@
 			</view>				
 		</view> -->
 
-		
+
 
 		<!-- 离开实验室 -->
 
@@ -30,13 +31,15 @@
 			<u-toast ref="uToastMask" />
 			<view style="display: flex;	align-items: center;	justify-content: center;height: 100%;width: 100%;">
 
-				<u-button type="success" :loading="enterRoomLoading" :ripple="true" @click="getRoomList" v-if="userInfo!=null">
+				<u-button type="warning" :ripple="true" @click="toRealName" v-if="userInfo==null">
+					<u-icon name="warning" size="40" style="margin-right:10rpx ;"></u-icon>请先实名手机绑定再使用
+				</u-button>
+
+				<u-button type="success" :loading="enterRoomLoading" :ripple="true" @click="getRoomList" v-else>
 					<u-icon name="map" size="40" style="margin-right:10rpx ;"></u-icon>点击模拟进入实验室
 				</u-button>
 
-				<u-button type="warning" :ripple="true" @click="toRealName" v-else>
-					<u-icon name="warning" size="40" style="margin-right:10rpx ;"></u-icon>请先实名手机绑定再使用
-				</u-button>
+
 
 			</view>
 		</u-mask>
@@ -62,8 +65,8 @@
 				<!-- 计时 -->
 				<view class="bg-img bg-mask shadow-blur" style="background-image: url('http://mp-images.test.upcdn.net/lab1.jpg');height: 270rpx;z-index: 1;">
 					<view class="flex justify-center padding-right-sm">
-						<led :mode="3" :startTime="duration" style="width: 60%;padding-top: 18%;"></led>
-					</view>
+						<led :mode="3" :startTime="duration" style="width: 60%;padding-top: 18%;"></led>						
+					</view>				
 				</view>
 
 				<!-- 状态栏 -->
@@ -117,6 +120,10 @@
 				</view>
 				<!-- <u-tabs class="shadow-lg" ref="tabs" :list="tabsList" :bold="true" :is-scroll="false" :current="currentTabs"
 				 @change="tabsChange"></u-tabs> -->
+				 				
+				 <u-alert-tips type="warning" title="您目前已经在实验室超过12小时,请注意休息哦" :close-able="true" :show="isTimeOut" :show-icon="true" @close="this.isTimeOut = false"></u-alert-tips>
+
+				 
 			</u-sticky>
 
 			<!-- :class="item.uid==that.userInfo.uid?'cu-item self':'cu-item'" -->
@@ -334,7 +341,7 @@
 				<view class="cu-card dynamic shadow solids">
 					<u-cell-group class="margin-top shadow-lg">
 
-						<u-cell-item :arrow="false" value="05-15">
+						<u-cell-item :arrow="false" value="05-15" @click="showToast('该功能开发中,敬请期待','primary','bottom')">
 							<view slot="title" class="text-black text-bold text-sm padding">{{statusInfo.room.rname}}注意事项.word</br><text
 								 class="text-grey text-xs">来自{{userInfo.realName}}</text></text></view>
 							<view slot="icon" class="cu-avatar radius shadow-blur" style="background-image: url('http://mp-images.test.upcdn.net/word2.png')">
@@ -422,6 +429,7 @@
 		data() {
 			return {
 
+				isTimeOut:false,
 				CustomBar: this.CustomBar,
 				loadProgress: 0,
 				scrollTop: 1,
@@ -440,7 +448,7 @@
 				adminMember: [],
 				// 用户信息
 				wxuserInfo: "",
-				userInfo: "",
+				userInfo: null,
 
 				// tab选择栏
 				currentTabs: 0,
@@ -476,7 +484,7 @@
 				enableDebug: true
 			})
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
-			/* global.getUserInfo() */
+			global.getUserInfo()
 			that.userInfo = uni.getStorageSync("userInfo")
 			/* that.loadProgress_onShow() */
 			that.getStatus()
@@ -509,9 +517,10 @@
 					url: "http://47.100.59.153:8885/MP/public/getRoomList",
 					success(res) {
 						console.log(res)
-						for (let i = res.data.roomList.length - 1; i > -1; i--) {
+						that.roomList = res.data.roomList.reverse()
+						/* for (let i = res.data.roomList.length - 1; i > -1; i--) {
 							that.roomList.push(res.data.roomList[i])
-						}
+						} */
 
 						for (let i = that.roomList.length - 1; i >= 0; i--) {
 							that.roomList[i].value = that.roomList[i].rid
@@ -572,7 +581,7 @@
 				}
 				that.roomList = []
 				if (room.del == 0) {
-					that.showToast_mask("此实验室已关闭", "error", "bottom")
+					that.showToast_mask("实验室"+room.rname+"已关闭", "error", "bottom")
 					return false
 				} else {
 					uni.request({
@@ -735,8 +744,8 @@
 									that.duration[6] = Math.floor(s / 10)
 									that.duration[7] = Math.floor(s % 10)
 								}
-
-								console.log(that.duration)
+								
+								console.log("在实验室时间=="+that.duration)
 
 
 								// 初始化在线和不在线人
@@ -755,8 +764,19 @@
 										that.offlineMember.push(that.memberInfo[i])
 									}
 								}
-
+								
+							
 								that.showToast("当前在" + that.roomLogInfo[0].room.rname, "success", "bottom")
+								
+								if(h > 11){
+									that.isTimeOut = true
+									setTimeout(function () {
+									that.showToast("您目前已经在实验室超过12小时,请注意休息哦", "warning","bottom")									
+									}, 2500);									
+								}else{
+									that.isTimeOut = false
+								}
+								
 							}
 
 

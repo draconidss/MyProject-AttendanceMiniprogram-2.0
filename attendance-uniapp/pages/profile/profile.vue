@@ -258,7 +258,7 @@
 			var that = this
 			console.log("onShow()")
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
-			/* global.getUserInfo() */
+			global.getUserInfo()
 			that.userInfo = uni.getStorageSync("userInfo")
 			console.log("that.userInfo" + that.userInfo)
 
@@ -472,14 +472,17 @@
 						phone: that.form_phone
 					},
 					success(res) {
+						console.log(res)
 						if (res.data.phone == null) {
 							that.phoneErrorMsg = "电话号码已绑定"
 							that.showToast_realName("电话号码已存在", "warning", "bottom")
+							return false
 						} else {
 							that.phoneErrorMsg = ""
 							that.showToast_realName("电话号码可用", "success", "bottom")
+							return true
 						}
-						console.log(res)
+						
 					}
 				})
 			},
@@ -532,6 +535,20 @@
 
 			realNameSubmit() {
 				var that = this
+				if(that.form_code == null || that.form_realName == null || that.form_phone == null){
+					that.showToast("请填写完整信息","error","bottom")
+					return false
+				}else{
+					if(that.checkPhone() == false){
+						return false
+					}else{
+						if(that.form_code != that.codeSend){
+							that.showToast("您输入的验证码不正确","error","bottom")
+							return false
+						}
+					}
+					
+				}
 				uni.request({
 					url: "http://47.100.59.153:8885/MP/profile/realProfile",
 					data: {

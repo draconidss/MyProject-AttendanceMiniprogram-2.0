@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.uni-fab.data-v-5633cdf4 {
+.uni-fab.data-v-eeeef158 {
   position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,30 +16,30 @@
           align-items: center;
   z-index: 10;
 }
-.uni-fab--active.data-v-5633cdf4 {
+.uni-fab--active.data-v-eeeef158 {
   opacity: 1;
 }
-.uni-fab--leftBottom.data-v-5633cdf4 {
+.uni-fab--leftBottom.data-v-eeeef158 {
   left: 5px;
   bottom: 20px;
   padding: 10px;
 }
-.uni-fab--leftTop.data-v-5633cdf4 {
+.uni-fab--leftTop.data-v-eeeef158 {
   left: 5px;
   top: 30px;
   padding: 10px;
 }
-.uni-fab--rightBottom.data-v-5633cdf4 {
+.uni-fab--rightBottom.data-v-eeeef158 {
   right: 5px;
   bottom: 20px;
   padding: 10px;
 }
-.uni-fab--rightTop.data-v-5633cdf4 {
+.uni-fab--rightTop.data-v-eeeef158 {
   right: 5px;
   top: 30px;
   padding: 10px;
 }
-.uni-fab__circle.data-v-5633cdf4 {
+.uni-fab__circle.data-v-eeeef158 {
   position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -57,38 +57,38 @@
           border-radius: 55px;
   z-index: 11;
 }
-.uni-fab__circle--leftBottom.data-v-5633cdf4 {
+.uni-fab__circle--leftBottom.data-v-eeeef158 {
   left: 15px;
   bottom: 30px;
 }
-.uni-fab__circle--leftTop.data-v-5633cdf4 {
+.uni-fab__circle--leftTop.data-v-eeeef158 {
   left: 15px;
   top: 40px;
 }
-.uni-fab__circle--rightBottom.data-v-5633cdf4 {
+.uni-fab__circle--rightBottom.data-v-eeeef158 {
   right: 15px;
   bottom: 30px;
 }
-.uni-fab__circle--rightTop.data-v-5633cdf4 {
+.uni-fab__circle--rightTop.data-v-eeeef158 {
   right: 15px;
   top: 40px;
 }
-.uni-fab__circle--left.data-v-5633cdf4 {
+.uni-fab__circle--left.data-v-eeeef158 {
   left: 0;
 }
-.uni-fab__circle--right.data-v-5633cdf4 {
+.uni-fab__circle--right.data-v-eeeef158 {
   right: 0;
 }
-.uni-fab__circle--top.data-v-5633cdf4 {
+.uni-fab__circle--top.data-v-eeeef158 {
   top: 0;
 }
-.uni-fab__circle--bottom.data-v-5633cdf4 {
+.uni-fab__circle--bottom.data-v-eeeef158 {
   bottom: 0;
 }
-.uni-fab__plus.data-v-5633cdf4 {
+.uni-fab__plus.data-v-eeeef158 {
   font-weight: bold;
 }
-.fab-circle-v.data-v-5633cdf4 {
+.fab-circle-v.data-v-eeeef158 {
   position: absolute;
   width: 3px;
   height: 31px;
@@ -102,7 +102,7 @@
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.fab-circle-h.data-v-5633cdf4 {
+.fab-circle-h.data-v-eeeef158 {
   position: absolute;
   width: 31px;
   height: 3px;
@@ -116,11 +116,11 @@
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.uni-fab__plus--active.data-v-5633cdf4 {
+.uni-fab__plus--active.data-v-eeeef158 {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-.uni-fab__content.data-v-5633cdf4 {
+.uni-fab__content.data-v-eeeef158 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -142,22 +142,22 @@
   border-width: 1rpx;
   border-style: solid;
 }
-.uni-fab__content--other-platform.data-v-5633cdf4 {
+.uni-fab__content--other-platform.data-v-eeeef158 {
   border-width: 0px;
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 }
-.uni-fab__content--left.data-v-5633cdf4 {
+.uni-fab__content--left.data-v-eeeef158 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
           justify-content: flex-start;
 }
-.uni-fab__content--right.data-v-5633cdf4 {
+.uni-fab__content--right.data-v-eeeef158 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
-.uni-fab__content--flexDirection.data-v-5633cdf4 {
+.uni-fab__content--flexDirection.data-v-eeeef158 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -166,7 +166,7 @@
   -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
-.uni-fab__content--flexDirectionStart.data-v-5633cdf4 {
+.uni-fab__content--flexDirectionStart.data-v-eeeef158 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -175,7 +175,7 @@
   -webkit-justify-content: flex-start;
           justify-content: flex-start;
 }
-.uni-fab__content--flexDirectionEnd.data-v-5633cdf4 {
+.uni-fab__content--flexDirectionEnd.data-v-eeeef158 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -184,7 +184,7 @@
   -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
-.uni-fab__item.data-v-5633cdf4 {
+.uni-fab__item.data-v-eeeef158 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -204,19 +204,19 @@
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-.uni-fab__item--active.data-v-5633cdf4 {
+.uni-fab__item--active.data-v-eeeef158 {
   opacity: 1;
 }
-.uni-fab__item-image.data-v-5633cdf4 {
+.uni-fab__item-image.data-v-eeeef158 {
   width: 25px;
   height: 25px;
   margin-bottom: 3px;
 }
-.uni-fab__item-text.data-v-5633cdf4 {
+.uni-fab__item-text.data-v-eeeef158 {
   color: #FFFFFF;
   font-size: 12px;
 }
-.uni-fab__item--first.data-v-5633cdf4 {
+.uni-fab__item--first.data-v-eeeef158 {
   width: 55px;
 }
 

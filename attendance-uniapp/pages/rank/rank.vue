@@ -11,7 +11,7 @@
 		 style="height: 400upx;" >
 			<view class=" text-white" style="padding-top: 100rpx;">
 				<view class=" margin-left-lg flex align-center">
-					<view class="cu-avatar radius shadow-blur" :style="{backgroundImage:'url('+topUser.avatarUrl+')'}"></view>
+					<view class="cu-avatar radius shadow" :style="{backgroundImage:'url('+topUser.avatarUrl+')'}"></view>
 					<view class=" text-xxl text-bold" >
 						{{topUser.nickName}}目前占领了{{currentTab == 0?'本周':'本月'}}的封面
 					</view>

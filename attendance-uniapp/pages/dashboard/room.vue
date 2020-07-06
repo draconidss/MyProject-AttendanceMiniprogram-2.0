@@ -41,7 +41,7 @@
 				<swiper class="screen-swiper round-dot " :indicator-dots="true" :circular="true" :autoplay="true" interval="5000"
 				 duration="500">
 					<swiper-item v-for="(item,index) in 3" :key="index">
-						<image :src="'http://mp-images.test.upcdn.net/lab'+index+ '.jpg'" mode="aspectFill" class="bg-mask"></image>
+						<image :src="'http://mp-images.test.upcdn.net/lab'+index+ '.jpg'" mode="aspectFill" class="bg-mask" style="height: 400upx;"></image>
 					</swiper-item>
 				</swiper>
 
@@ -295,7 +295,7 @@
 			<block v-else-if="currentTab == 3">
 				<u-cell-group class="margin-top shadow-lg">
 
-					<u-cell-item :arrow="false" value="05-15">
+					<u-cell-item :arrow="false" value="05-15" @click="showToast('该功能开发中,敬请期待','primary','bottom')">
 						<view slot="title" class="text-black text-bold text-sm padding">{{rname}}注意事项.word</br><text class="text-grey text-xs">来自{{userInfo.realName}}</text></text></view>
 						<view slot="icon" class="cu-avatar radius shadow-blur" style="background-image: url('http://mp-images.test.upcdn.net/word2.png')">
 							<!-- <view class="cu-tag badge lg">{{index+1}}</view> -->
@@ -380,7 +380,11 @@
 						<u-cell-item :arrow="false" :center="true" title="地址" :value="address">
 							<view slot="icon" class="cuIcon-location padding-right-sm text-red"></view>
 						</u-cell-item>
+						
 
+						<u-cell-item :arrow="false" :center="true" title="查看监控" value="TODO" @click="showToast('该功能开发中，敬请期待','primary','bottom')">
+							<view slot="icon" class="cuIcon-attention padding-right-sm text-black"></view>
+						</u-cell-item>
 
 						<u-cell-item :arrow="false" :center="true" title="是否开放">
 							<view slot="icon" class="cuIcon-attention padding-right-sm text-cyan"></view>
@@ -477,6 +481,7 @@
 	export default {
 		data() {
 			return {
+				index:0,
 				isSticky: false,
 				showReadyAddNotice: false,
 				checkedDel: false,
@@ -513,7 +518,7 @@
 				}, {
 					name: '文件'
 				}, {
-					name: '设置'
+					name: '概览'
 				}],
 				noticeTabsList: [{
 					name: '可用公告'
@@ -623,7 +628,7 @@
 			that.address = option.address
 
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
-			/* global.getUserInfo() */
+			global.getUserInfo()
 			that.userInfo = uni.getStorageSync("userInfo")
 
 			var e = {}
@@ -712,19 +717,30 @@
 						data: {},
 						success(res) {
 							console.log(res)
-							that.userList = res.data.userList
-
+							that.userList = []
+							var userList = []
+							userList = res.data.userList
+							console.log("userList:::"+userList)
+							
 							if (that.adminMember.length != 0) {
-								for (let i=0; i<that.userList.length;i++) {
+								for (let item of userList) {
 									for (let item1 of that.adminMember) {
-										if (that.userList[i].uid == item1.uid) {
-											that.userList.splice(i,1)
+										if (item.uid == item1.uid) {
+											item.uid = null
 										}
 									}
 								}
-							} else {
-								
+																
 							}
+							
+							for(let item of userList){
+								if(item.uid != null){
+									that.userList.push(item)
+								}
+							}
+							
+							
+							console.log(that.userList)
 
 							that.indexList = []
 							for (let item of that.userList) {

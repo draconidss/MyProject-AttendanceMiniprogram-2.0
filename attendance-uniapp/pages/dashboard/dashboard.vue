@@ -528,7 +528,7 @@
 
 			var that = this
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
-			/* global.getUserInfo() */
+			global.getUserInfo()
 			that.userInfo = uni.getStorageSync("userInfo")
 
 			// 根据离开页面来判定重新加载什么
@@ -613,6 +613,14 @@
 					that.getAllLog(e)
 				}else if(index == 1){
 					that.collapse = false
+					if(that.userInfo.level != 1){
+						that.showToast("您的权限不够","warning","bottom")
+					}else{
+						uni.navigateTo({
+							url:"user"
+						})
+					}
+					
 				}
 				that.currentTabs = index
 

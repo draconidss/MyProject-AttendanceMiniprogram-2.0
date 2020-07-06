@@ -1,8 +1,15 @@
 {
   "usingComponents": {
     "u-back-top": "/uview-ui/components/u-back-top/u-back-top",
+    "u-notice-bar": "/uview-ui/components/u-notice-bar/u-notice-bar",
     "u-subsection": "/uview-ui/components/u-subsection/u-subsection",
     "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
-    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item"
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item",
+    "u-collapse": "/uview-ui/components/u-collapse/u-collapse",
+    "u-collapse-item": "/uview-ui/components/u-collapse-item/u-collapse-item",
+    "u-table": "/uview-ui/components/u-table/u-table",
+    "u-tr": "/uview-ui/components/u-tr/u-tr",
+    "u-th": "/uview-ui/components/u-th/u-th",
+    "u-td": "/uview-ui/components/u-td/u-td"
   }
 }

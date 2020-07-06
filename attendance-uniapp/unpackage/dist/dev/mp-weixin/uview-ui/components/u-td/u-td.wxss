@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.u-td.data-v-14c62486 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: 28rpx;
+  color: #606266;
+  -webkit-align-self: stretch;
+          align-self: stretch;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.u-col-1.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12);
+          flex: 0 0 calc(100%/12);
+}
+.u-col-2.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 2);
+          flex: 0 0 calc(100%/12 * 2);
+}
+.u-col-3.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 3);
+          flex: 0 0 calc(100%/12 * 3);
+}
+.u-col-4.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 4);
+          flex: 0 0 calc(100%/12 * 4);
+}
+.u-col-5.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 5);
+          flex: 0 0 calc(100%/12 * 5);
+}
+.u-col-6.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 6);
+          flex: 0 0 calc(100%/12 * 6);
+}
+.u-col-7.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 7);
+          flex: 0 0 calc(100%/12 * 7);
+}
+.u-col-8.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 8);
+          flex: 0 0 calc(100%/12 * 8);
+}
+.u-col-9.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 9);
+          flex: 0 0 calc(100%/12 * 9);
+}
+.u-col-10.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 10);
+          flex: 0 0 calc(100%/12 * 10);
+}
+.u-col-11.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 11);
+          flex: 0 0 calc(100%/12 * 11);
+}
+.u-col-12.data-v-14c62486 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc(100%/12 * 12);
+          flex: 0 0 calc(100%/12 * 12);
+}
+
