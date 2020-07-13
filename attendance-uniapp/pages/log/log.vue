@@ -463,11 +463,17 @@
 							that.isCale = false
 							that.scrollTop = 0
 							
+							setTimeout(function () {
+							uni.hideLoading()
+							}, 500);		
+							
+							
+							
 						}
 					})
 				}
 
-				uni.hideLoading()
+				
 			},
 			getLogAndDuration2() {
 				var that = this
@@ -484,7 +490,7 @@
 				var that = this
 				if (that.userInfo != null) {
 					uni.request({
-						url: "http://47.100.59.153:8885/MP/log/getDuration?uid=1",
+						url: "http://47.100.59.153:8885/MP/log/getDuration",
 						data: {
 							uid: that.userInfo.uid
 						},

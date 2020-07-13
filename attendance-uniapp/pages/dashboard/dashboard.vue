@@ -754,6 +754,9 @@
 
 			// 调用接口方法集
 			getAllLog(e) {
+				uni.showLoading({
+					title:"获取所有日志中"
+				})
 				var that = this
 				var startDate = e.startDate
 				var endDate = e.endDate
@@ -798,6 +801,8 @@
 							that.showToast("获取所有用户日志成功", "success", "bottom")
 						}
 						that.isCale = false
+						
+						uni.hideLoading()
 					}
 				})
 			},

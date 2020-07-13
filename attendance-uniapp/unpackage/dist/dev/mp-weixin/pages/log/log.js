@@ -97,10 +97,10 @@ var components = {
     return __webpack_require__.e(/*! import() | uview-ui/components/u-toast/u-toast */ "uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-toast/u-toast.vue */ 257))
   },
   uBackTop: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-back-top/u-back-top */ "uview-ui/components/u-back-top/u-back-top").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-back-top/u-back-top.vue */ 375))
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-back-top/u-back-top */ "uview-ui/components/u-back-top/u-back-top").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-back-top/u-back-top.vue */ 382))
   },
   uCalendar: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-calendar/u-calendar */ "uview-ui/components/u-calendar/u-calendar").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-calendar/u-calendar.vue */ 382))
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-calendar/u-calendar */ "uview-ui/components/u-calendar/u-calendar").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-calendar/u-calendar.vue */ 389))
   },
   uButton: function() {
     return __webpack_require__.e(/*! import() | uview-ui/components/u-button/u-button */ "uview-ui/components/u-button/u-button").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-button/u-button.vue */ 271))
@@ -109,7 +109,7 @@ var components = {
     return __webpack_require__.e(/*! import() | uview-ui/components/u-sticky/u-sticky */ "uview-ui/components/u-sticky/u-sticky").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-sticky/u-sticky.vue */ 299))
   },
   uNavbar: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-navbar/u-navbar */ "uview-ui/components/u-navbar/u-navbar").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-navbar/u-navbar.vue */ 389))
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-navbar/u-navbar */ "uview-ui/components/u-navbar/u-navbar").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-navbar/u-navbar.vue */ 396))
   },
   uIcon: function() {
     return __webpack_require__.e(/*! import() | uview-ui/components/u-icon/u-icon */ "uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-icon/u-icon.vue */ 278))
@@ -121,19 +121,19 @@ var components = {
     return __webpack_require__.e(/*! import() | uview-ui/components/u-subsection/u-subsection */ "uview-ui/components/u-subsection/u-subsection").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-subsection/u-subsection.vue */ 313))
   },
   uCellGroup: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-cell-group/u-cell-group */ "uview-ui/components/u-cell-group/u-cell-group").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell-group/u-cell-group.vue */ 320))
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-cell-group/u-cell-group */ "uview-ui/components/u-cell-group/u-cell-group").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell-group/u-cell-group.vue */ 327))
   },
   uCellItem: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-cell-item/u-cell-item */ "uview-ui/components/u-cell-item/u-cell-item").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell-item/u-cell-item.vue */ 327))
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-cell-item/u-cell-item */ "uview-ui/components/u-cell-item/u-cell-item").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell-item/u-cell-item.vue */ 334))
   },
   uEmpty: function() {
-    return Promise.all(/*! import() | uview-ui/components/u-empty/u-empty */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-empty/u-empty")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-empty/u-empty.vue */ 334))
+    return Promise.all(/*! import() | uview-ui/components/u-empty/u-empty */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-empty/u-empty")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-empty/u-empty.vue */ 341))
   },
   uDivider: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-divider/u-divider */ "uview-ui/components/u-divider/u-divider").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-divider/u-divider.vue */ 354))
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-divider/u-divider */ "uview-ui/components/u-divider/u-divider").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-divider/u-divider.vue */ 361))
   },
   uTag: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-tag/u-tag */ "uview-ui/components/u-tag/u-tag").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-tag/u-tag.vue */ 396))
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-tag/u-tag */ "uview-ui/components/u-tag/u-tag").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-tag/u-tag.vue */ 403))
   }
 }
 var render = function() {
@@ -818,7 +818,7 @@ var _default = { data: function data() {return { // 进度条
     showToast: function showToast(title, type, position) {this.$refs.uToast.show({ title: title, type: type, position: position, duration: 2500 });}, // 加载进度条
     loadProgress: function loadProgress() {var _this = this;if (this.loadProgress_data < 100) {setTimeout(function () {_this.loadProgress();}, 50);} else {this.loadProgress_data = 0;}}, // 获取此人所有时长，房间日志等
     getLogAndDuration: function getLogAndDuration(e) {uni.showLoading({ title: '正在加载日志' });var that = this;that.toTop();var startDate = e.startDate;var endDate = e.endDate;if (that.userInfo != null) {uni.request({ url: "http://47.100.59.153:8885/MP/log/getLog", data: { uid: that.userInfo.uid }, success: function success(res) {console.log(res);that.logList = res.data.logList;if (startDate != null && endDate != null) {var allDuration2 = 0;console.log("选择日期模式");var logList_2 = [];for (var i = 0; i < that.logList.length; i++) {var ldate = (0, _moment.default)(that.logList[i].ldate).format('YYYY-MM-DD');if ((0, _moment.default)(ldate).isBefore(startDate) == false && (0, _moment.default)(ldate).isAfter(endDate) == false) {console.log("符合条件" + that.logList[i]);logList_2.push(that.logList[i]);if (that.logList[i].during != null) {allDuration2 = allDuration2 + that.logList[i].during;}}}that.logList = logList_2;that.logList_Len2 = that.logList.length;that.allDuration2 = allDuration2;that.startDate = startDate;that.endDate = endDate;that.currentTabs = 0;that.showToast("获取从" + startDate + "到" + endDate + "的日志成功", "success", "bottom");} // 获取全部
-            else {var allDuration = 0;for (var _i = 0; _i < that.logList.length; _i++) {allDuration = allDuration + that.logList[_i].during;}that.startDate = (0, _moment.default)(that.logList[that.logList.length - 1].ldate).format('YYYY-MM-DD');that.endDate = (0, _moment.default)(that.logList[0].ldate).format('YYYY-MM-DD');that.$refs.uCountTo1.start();that.$refs.uCountTo2.start();that.$refs.uCountTo3.start();that.logList_Len = that.logList.length;that.allDuration = allDuration;that.logList_Len2 = that.logList.length;that.allDuration2 = allDuration;that.showToast("获取日志成功", "success", "bottom");}that.isCale = false;that.scrollTop = 0;} });}uni.hideLoading();}, getLogAndDuration2: function getLogAndDuration2() {var that = this;var e = {};e.startDate = null;e.endDate = null;that.toTop();that.getLogAndDuration(e);}, getMyRoom: function getMyRoom() {uni.showLoading({ title: '加载我去过的实验室' });var that = this;if (that.userInfo != null) {uni.request({ url: "http://47.100.59.153:8885/MP/log/getDuration?uid=1", data: { uid: that.userInfo.uid }, success: function success(res) {console.log(res);that.roomDurationList = res.data.roomDurationList;that.showToast("获取去过的实验室成功", "success", "bottom");} });}uni.hideLoading();}, // 获取某人在某间房间的日志
+            else {var allDuration = 0;for (var _i = 0; _i < that.logList.length; _i++) {allDuration = allDuration + that.logList[_i].during;}that.startDate = (0, _moment.default)(that.logList[that.logList.length - 1].ldate).format('YYYY-MM-DD');that.endDate = (0, _moment.default)(that.logList[0].ldate).format('YYYY-MM-DD');that.$refs.uCountTo1.start();that.$refs.uCountTo2.start();that.$refs.uCountTo3.start();that.logList_Len = that.logList.length;that.allDuration = allDuration;that.logList_Len2 = that.logList.length;that.allDuration2 = allDuration;that.showToast("获取日志成功", "success", "bottom");}that.isCale = false;that.scrollTop = 0;setTimeout(function () {uni.hideLoading();}, 500);} });}}, getLogAndDuration2: function getLogAndDuration2() {var that = this;var e = {};e.startDate = null;e.endDate = null;that.toTop();that.getLogAndDuration(e);}, getMyRoom: function getMyRoom() {uni.showLoading({ title: '加载我去过的实验室' });var that = this;if (that.userInfo != null) {uni.request({ url: "http://47.100.59.153:8885/MP/log/getDuration", data: { uid: that.userInfo.uid }, success: function success(res) {console.log(res);that.roomDurationList = res.data.roomDurationList;that.showToast("获取去过的实验室成功", "success", "bottom");} });}uni.hideLoading();}, // 获取某人在某间房间的日志
     showRoomLogModal: function showRoomLogModal(e) {var that = this;uni.showLoading({ title: "正在获取日志" });that.modalName = e.currentTarget.dataset.modal;var rid = e.currentTarget.dataset.rid;var rname = e.currentTarget.dataset.rname;uni.request({ url: "http://47.100.59.153:8885/MP/log/getLog", data: { uid: that.userInfo.uid, rid: rid }, success: function success(res) {console.log(res);that.roomLogList = res.data.logList;that.showToast("获取我在" + rname + "的日志成功", "success", "bottom");} });uni.hideLoading();} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../../../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 

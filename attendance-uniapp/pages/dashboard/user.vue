@@ -75,15 +75,15 @@
 					<view slot="title" class="text-black text-bold text-lg padding-xs">未实名<text class="text-grey">
 							（{{item.nickName}})</text></view>
 					<view slot="icon" class="cu-avatar radius " :style="{backgroundImage:'url('+item.avatarUrl+')'}">
-			
+
 					</view>
 				</u-cell-item>
-			
+
 			</u-cell-group>
-			
-			
-			
-<!-- 			<u-index-list :scrollTop="scrollTop" v-else :index-list="indexList">
+
+
+
+			<!-- 			<u-index-list :scrollTop="scrollTop" v-else :index-list="indexList">
 				<view v-for="(item, index) in indexList" :key="index">
 					<u-index-anchor :index="item" class="padding-top " />
 					<u-cell-group class="margin-top shadow-lg">
@@ -197,7 +197,7 @@
 						<u-cell-item :arrow="false" :center="true" title="微信昵称" :value="userDetail.wxuser.nickName">
 							<view slot="icon" class="cuIcon-profile padding-right-sm text-pink"></view>
 						</u-cell-item> -->
-							<u-cell-item :arrow="false" :center="true" title="手机"  @click="callPhone(userDetail.phone)">
+							<u-cell-item :arrow="false" :center="true" title="手机" @click="callPhone(userDetail.phone)">
 								<view slot="icon" class="cuIcon-phone padding-right-sm text-red"></view>
 								<u-button slot="right-icon" type="primary" :ripple="true" :plain="true" size="mini" @click="callPhone(userDetail.phone)">拨打{{userDetail.phone}}</u-button>
 							</u-cell-item>
@@ -482,7 +482,7 @@
 				userRoom_len: 0,
 				userAdminRoom_len: 0,
 				regDate: null,
-				lastLoginDate:null,
+				lastLoginDate: null,
 			}
 		},
 		onPageScroll(e) {
@@ -508,9 +508,9 @@
 			scroll: function(e) {
 				this.old.scrollTop = e.detail.scrollTop
 			},
-			callPhone(phone){
+			callPhone(phone) {
 				uni.makePhoneCall({
-					phoneNumber:phone
+					phoneNumber: phone
 				})
 			},
 
@@ -538,9 +538,9 @@
 				e.endDate = null
 				that.changeCale(e)
 			},
-			
+
 			// 抽屉界面回到顶部
-			toTop(){
+			toTop() {
 				var that = this
 				that.scrollTop = that.old.scrollTop
 				that.$nextTick(function() {
@@ -611,27 +611,31 @@
 						that.userAdminRoom_len = that.userAdminRoom.length
 
 						that.allDuration = 0
-						if(res.data.userAllDuration.length > 0){
+						if (res.data.userAllDuration.length > 0) {
 							that.allDuration = res.data.userAllDuration[0].allDuration
-						}						
+						}
 						that.allDuration2 = that.allDuration
 
-						if(that.userLog.length > 0){
+						if (that.userLog.length > 0) {
 							that.startDate = moment(that.userLog[that.userLog.length - 1].ldate).format('YYYY-MM-DD')
 							that.endDate = moment(that.userLog[0].ldate).format('YYYY-MM-DD')
-						}else{
+						} else {
 							that.startDate = 0
 							that.endDate = 0
-						}						
+						}
 						that.regDate = moment(that.userDetail.wxuser.regDate).format('YYYY-MM-DD HH:mm:ss')
 						that.lastLoginDate = moment(that.userDetail.wxuser.lastLoginDate).format('YYYY-MM-DD HH:mm:ss')
-											
+
+						setTimeout(function() {
+							uni.hideLoading()
+						}, 500);
+
 						that.toTop()
 						that.showToast("获取" + that.userDetail.realName + "的信息成功", "success", "bottom")
 
 					}
 				})
-				uni.hideLoading()
+
 			},
 			userDetailTabsChange(index) {
 				var that = this
@@ -678,7 +682,7 @@
 						that.realUserList = []
 						that.unRealUserList = []
 						for (let item of that.userList) {
-							if(item.user!=null){
+							if (item.user != null) {
 								item.index = initial(item.user.realName)
 								for (let item2 of that.indexList_temp) {
 									if (item2.value == item.index) {
@@ -687,11 +691,11 @@
 									}
 								}
 								that.realUserList.push(item)
-							}else{
+							} else {
 								that.unRealUserList.push(item)
 							}
-							
-							
+
+
 						}
 						that.indexList = []
 						for (let item of that.indexList_temp) {

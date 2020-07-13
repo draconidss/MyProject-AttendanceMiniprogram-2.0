@@ -654,8 +654,7 @@
 			// 添加管理员			
 			changeAdmin(index) {
 				console.log(index)
-				var that = this
-				
+				var that = this				
 				var user = index
 				var method = that.currentAdminTab == 0 ? 1 : 0
 				var title = ''
@@ -684,12 +683,18 @@
 									e.endDate = null
 									e.refresh = true
 									that.getRoomDetail(e)
+									
+									setTimeout(function () {									
 									if (res.data.code == 200) {
-										that.showChangeAdmin(0)
+										that.showChangeAdmin(0)	
 										that.showToast("添加管理员成功", "success", "bottom")
 									} else if (res.data.code == 201) {
+										that.showChangeAdmin(1)	
 										that.showToast("删除管理员成功", "success", "bottom")
 									}
+									}, 300);				
+									
+
 								}
 							})
 						}

@@ -52,7 +52,7 @@
 
 			<drag-button :isDock="true" :existTabBar="true" @btnClick="leaveRoom">
 				<view slot="icon" class="text-xxl">
-					<text class=" cuIcon-exit "></text>
+					<text class=" cuIcon-forwardfill"></text>
 				</view>
 			</drag-button>
 
@@ -121,7 +121,7 @@
 				<!-- <u-tabs class="shadow-lg" ref="tabs" :list="tabsList" :bold="true" :is-scroll="false" :current="currentTabs"
 				 @change="tabsChange"></u-tabs> -->
 				 				
-				 <u-alert-tips type="warning" title="您目前已经在实验室超过12小时,请注意休息哦" :close-able="true" :show="isTimeOut" :show-icon="true" @close="this.isTimeOut = false"></u-alert-tips>
+				 <u-alert-tips type="warning" title="您目前已经在实验室超过6小时,请注意休息哦" :close-able="true" :show="isTimeOut" :show-icon="true" @close="this.isTimeOut = false"></u-alert-tips>
 
 				 
 			</u-sticky>
@@ -768,10 +768,10 @@
 							
 								that.showToast("当前在" + that.roomLogInfo[0].room.rname, "success", "bottom")
 								
-								if(h > 11){
+								if(h > 5){
 									that.isTimeOut = true
 									setTimeout(function () {
-									that.showToast("您目前已经在实验室超过12小时,请注意休息哦", "warning","bottom")									
+									that.showToast("您目前已经在实验室超过6小时,请注意休息哦", "warning","bottom")									
 									}, 2500);									
 								}else{
 									that.isTimeOut = false

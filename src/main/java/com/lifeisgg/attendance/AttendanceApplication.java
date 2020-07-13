@@ -14,9 +14,18 @@ public class AttendanceApplication  {
 }
 
 
-/*
-@SpringBootApplication
+/*@SpringBootApplication
 public class AttendanceApplication extends SpringBootServletInitializer {
+
+    public static void main(String[] args) {
+        SpringApplication.run(AttendanceApplication.class, args);
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(AttendanceApplication.class);
+    }
+
 
     public static void main(String[] args) {
         SpringApplication.run(AttendanceApplication.class, args);
@@ -37,5 +46,4 @@ public class AttendanceApplication extends SpringBootServletInitializer {
 
 
 
-}
-*/
+}*/
