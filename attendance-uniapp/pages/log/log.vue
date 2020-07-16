@@ -1,6 +1,7 @@
 <template>
 	<view>
 		<u-toast ref="uToast" />
+		
 
 
 		<!-- 返回顶部 -->
@@ -412,7 +413,7 @@
 				var endDate = e.endDate
 				if(that.userInfo!=null){
 					uni.request({
-						url: "http://47.100.59.153:8885/MP/log/getLog",
+						url: "https://api.attendance.lifeisgg.online/MP/log/getLog",
 						data: {
 							uid: that.userInfo.uid
 						},
@@ -490,7 +491,7 @@
 				var that = this
 				if (that.userInfo != null) {
 					uni.request({
-						url: "http://47.100.59.153:8885/MP/log/getDuration",
+						url: "https://api.attendance.lifeisgg.online/MP/log/getDuration",
 						data: {
 							uid: that.userInfo.uid
 						},
@@ -513,7 +514,7 @@
 					var rid = e.currentTarget.dataset.rid
 					var rname = e.currentTarget.dataset.rname
 					uni.request({
-						url: "http://47.100.59.153:8885/MP/log/getLog",
+						url: "https://api.attendance.lifeisgg.online/MP/log/getLog",
 						data: {
 							uid: that.userInfo.uid,
 							rid: rid

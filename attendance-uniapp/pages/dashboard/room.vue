@@ -670,7 +670,7 @@
 						if (res.confirm) {
 							console.log("确定了")
 							uni.request({
-								url: "http://47.100.59.153:8885/MP/admin/addOrDelAdmin",
+								url: "https://api.attendance.lifeisgg.online/MP/admin/addOrDelAdmin",
 								data: {
 									rid: that.rid,
 									uid: user.uid,
@@ -718,7 +718,7 @@
 				// 添加用户
 				if (that.currentAdminTab == 0) {
 					uni.request({
-						url: "http://47.100.59.153:8885/MP/admin/getAllUser",
+						url: "https://api.attendance.lifeisgg.online/MP/admin/getAllUser",
 						data: {},
 						success(res) {
 							console.log(res)
@@ -803,7 +803,7 @@
 							}
 							if (res.confirm) {
 								uni.request({
-									url: "http://47.100.59.153:8885/MP/admin/changeRoomStatus",
+									url: "https://api.attendance.lifeisgg.online/MP/admin/changeRoomStatus",
 									data: {
 										uid: that.userInfo.uid,
 										rid: that.rid,
@@ -873,7 +873,7 @@
 					success: function(res) {
 						if (res.confirm) {
 							uni.request({
-								url: "http://47.100.59.153:8885/MP/admin/addOrDeleteNotice",
+								url: "https://api.attendance.lifeisgg.online/MP/admin/addOrDeleteNotice",
 								data: {
 									aid: aid,
 									uid: that.userInfo.uid,
@@ -910,7 +910,7 @@
 			addNotice() {
 				var that = this
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/admin/addOrDeleteNotice",
+					url: "https://api.attendance.lifeisgg.online/MP/admin/addOrDeleteNotice",
 					data: {
 						rid: that.rid,
 						uid: that.userInfo.uid,
@@ -942,7 +942,7 @@
 				var endDate = e.endDate
 				var refresh = e.refresh
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/admin/getRoomDetail",
+					url: "https://api.attendance.lifeisgg.online/MP/admin/getRoomDetail",
 					data: {
 						rid: that.rid
 					},

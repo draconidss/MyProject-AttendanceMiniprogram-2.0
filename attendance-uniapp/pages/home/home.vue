@@ -32,7 +32,7 @@
 			<view style="display: flex;	align-items: center;	justify-content: center;height: 100%;width: 100%;">
 
 				<u-button type="warning" :ripple="true" @click="toRealName" v-if="userInfo==null">
-					<u-icon name="warning" size="40" style="margin-right:10rpx ;"></u-icon>请先实名手机绑定再使用
+					<u-icon name="warning" size="40" style="margin-right:10rpx ;"></u-icon>点击去实名绑定开始使用(模拟)
 				</u-button>
 
 				<u-button type="success" :loading="enterRoomLoading" :ripple="true" @click="getRoomList" v-else>
@@ -514,7 +514,7 @@
 				that.enterRoomLoading = true
 				that.roomList = []
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/public/getRoomList",
+					url: "https://api.attendance.lifeisgg.online/MP/public/getRoomList",
 					success(res) {
 						console.log(res)
 						that.roomList = res.data.roomList.reverse()
@@ -585,7 +585,7 @@
 					return false
 				} else {
 					uni.request({
-						url: "http://47.100.59.153:8885/MP/home/entryRoom",
+						url: "https://api.attendance.lifeisgg.online/MP/home/entryRoom",
 						data: {
 							uid: that.userInfo.uid,
 							rid: rid
@@ -624,7 +624,7 @@
 					success: function(res) {
 						if (res.confirm) {
 							uni.request({
-								url: "http://47.100.59.153:8885/MP/home/leaveRoom",
+								url: "https://api.attendance.lifeisgg.online/MP/home/leaveRoom",
 								data: {
 									uid: that.userInfo.uid,
 									rid: that.statusInfo.rid
@@ -698,7 +698,7 @@
 				var that = this
 				if (that.userInfo != null) {
 					uni.request({
-						url: "http://47.100.59.153:8885/MP/home/getStatus",
+						url: "https://api.attendance.lifeisgg.online/MP/home/getStatus",
 						data: {
 							uid: that.userInfo.uid,
 						},

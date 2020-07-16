@@ -63,7 +63,7 @@
 		var wxuserInfo = uni.getStorageSync("wxuserInfo")
 		if (wxuserInfo) {
 			uni.request({
-				url: "http://47.100.59.153:8885/MP/public/login",
+				url: "https://api.attendance.lifeisgg.online/MP/public/login",
 				data: {
 					openid: wxuserInfo.openid,
 					nickName: wxuserInfo.nickName,

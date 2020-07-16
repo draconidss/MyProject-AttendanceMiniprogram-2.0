@@ -144,7 +144,7 @@
 				}
 
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/rank/getRank",
+					url: "https://api.attendance.lifeisgg.online/MP/rank/getRank",
 					data: {
 						duration: duration
 					},

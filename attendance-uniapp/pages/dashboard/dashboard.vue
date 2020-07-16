@@ -676,7 +676,7 @@
 			checkRoom() {
 				var that = this
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/admin/checkRoom",
+					url: "https://api.attendance.lifeisgg.online/MP/admin/checkRoom",
 					data: {
 						rname: that.form_roomName,
 						address: that.form_roomAddress
@@ -735,7 +735,7 @@
 			confirmAddRoom() {
 				var that = this
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/admin/insertRoom",
+					url: "https://api.attendance.lifeisgg.online/MP/admin/insertRoom",
 					data: {
 						uid: that.userInfo.uid,
 						rname: that.form_roomName,
@@ -761,7 +761,7 @@
 				var startDate = e.startDate
 				var endDate = e.endDate
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/log/getLog",
+					url: "https://api.attendance.lifeisgg.online/MP/log/getLog",
 					data: {},
 					success(res) {
 						console.log(res)
@@ -821,7 +821,7 @@
 				var that = this
 				// 超管获取所有房间
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/public/getRoomList",
+					url: "https://api.attendance.lifeisgg.online/MP/public/getRoomList",
 					data: {
 
 					},
@@ -854,7 +854,7 @@
 				var that = this
 				if (that.userInfo != null) {
 					uni.request({
-						url: "http://47.100.59.153:8885/MP/admin/getRoomByAdmin",
+						url: "https://api.attendance.lifeisgg.online/MP/admin/getRoomByAdmin",
 						data: {
 							uid: that.userInfo.uid
 						},

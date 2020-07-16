@@ -54,7 +54,7 @@
 					</view>
 					<view class="action">
 						<view class="cu-tag round bg-blue" v-if="userInfo">已认证</view>
-						<view class="cu-tag round bg-red" v-else>未认证</view>
+						<view class="cu-tag round bg-red" v-else>点击认证</view>
 					</view>
 				</view>
 
@@ -82,7 +82,7 @@
 			<!-- 实名绑定 -->
 			<view class="cu-modal" :class="modalName=='boundModal'?'show':''">
 				<!-- 未绑定 -->
-				<view class="cu-dialog" v-if="!userInfo">
+				<view class="cu-dialog"   v-if="!userInfo">
 					<u-toast ref="uToast_realName" />
 					<!-- 提示框 -->
 					<view class="cu-bar bg-white justify-end">
@@ -116,7 +116,7 @@
 				</view>
 
 				<!-- 实名认证已绑定 -->
-				<view class="cu-dialog" v-else>
+				<view class="cu-dialog "  v-else>
 					<view class="cu-bar bg-white justify-end">
 						<view class="content">实名认证</view>
 						<view class="action" @tap="hideModal">
@@ -299,7 +299,7 @@
 					success: function(res) {
 						if (res.confirm) {
 							uni.request({
-								url: "http://47.100.59.153:8885/MP/profile/test/beAdmin",
+								url: "https://api.attendance.lifeisgg.online/MP/profile/test/beAdmin",
 								data: {
 									uid: that.userInfo.uid
 								},
@@ -376,7 +376,7 @@
 
 						console.log("请求前的wxuserinfo" + that.wxuserInfo.openid)
 						uni.request({
-							url: "http://47.100.59.153:8885/MP/public/login",
+							url: "https://api.attendance.lifeisgg.online/MP/public/login",
 							data: {
 								nickName: that.wxuserInfo.nickName,
 								openid: that.wxuserInfo.openid,
@@ -394,6 +394,7 @@
 								uni.setStorageSync("userInfo", that.userInfo)
 								that.getWxUserInfoloading = false
 								that.showToast('微信登录成功', 'success', 'bottom')
+								that.modalName = 'boundModal'
 
 							}
 
@@ -467,7 +468,7 @@
 				var that = this
 				console.log("手机输入失去焦点")
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/profile/checkExist",
+					url: "https://api.attendance.lifeisgg.online/MP/profile/checkExist",
 					data: {
 						phone: that.form_phone
 					},
@@ -550,7 +551,7 @@
 					
 				}
 				uni.request({
-					url: "http://47.100.59.153:8885/MP/profile/realProfile",
+					url: "https://api.attendance.lifeisgg.online/MP/profile/realProfile",
 					data: {
 						openid: that.wxuserInfo.openid,
 						phone: that.form_phone,

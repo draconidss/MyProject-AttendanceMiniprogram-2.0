@@ -741,7 +741,7 @@ var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ 8));funct
       that.enterRoomLoading = true;
       that.roomList = [];
       uni.request({
-        url: "http://47.100.59.153:8885/MP/public/getRoomList",
+        url: "https://api.attendance.lifeisgg.online/MP/public/getRoomList",
         success: function success(res) {
           console.log(res);
           that.roomList = res.data.roomList.reverse();
@@ -812,7 +812,7 @@ var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ 8));funct
         return false;
       } else {
         uni.request({
-          url: "http://47.100.59.153:8885/MP/home/entryRoom",
+          url: "https://api.attendance.lifeisgg.online/MP/home/entryRoom",
           data: {
             uid: that.userInfo.uid,
             rid: rid },
@@ -851,7 +851,7 @@ var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ 8));funct
         success: function success(res) {
           if (res.confirm) {
             uni.request({
-              url: "http://47.100.59.153:8885/MP/home/leaveRoom",
+              url: "https://api.attendance.lifeisgg.online/MP/home/leaveRoom",
               data: {
                 uid: that.userInfo.uid,
                 rid: that.statusInfo.rid },
@@ -925,7 +925,7 @@ var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ 8));funct
       var that = this;
       if (that.userInfo != null) {
         uni.request({
-          url: "http://47.100.59.153:8885/MP/home/getStatus",
+          url: "https://api.attendance.lifeisgg.online/MP/home/getStatus",
           data: {
             uid: that.userInfo.uid },
 

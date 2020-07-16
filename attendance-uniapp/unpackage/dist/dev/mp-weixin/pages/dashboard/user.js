@@ -822,7 +822,7 @@ var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ 8));funct
         title: "获取用户信息中" });
 
       uni.request({
-        url: "http://47.100.59.153:8885/MP/admin/getUserDetail",
+        url: "https://api.attendance.lifeisgg.online/MP/admin/getUserDetail",
         data: {
           uid: uid },
 
@@ -902,7 +902,7 @@ var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ 8));funct
 
       var that = this;
       uni.request({
-        url: "http://47.100.59.153:8885/MP/admin/getAllUser",
+        url: "https://api.attendance.lifeisgg.online/MP/admin/getAllUser",
         data: {},
         success: function success(res) {
           console.log(res);

@@ -8,8 +8,8 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
 
 
-server:
-  port: 8885
+#server:
+#  port: 8885
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
