@@ -1,10 +1,14 @@
-![](images/logo.png)
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/logo.png"/></div>
+
+
 
 
 
 # 一.小程序二维码
 
-<img src="images/实验室出入管理小程序二维码.jpg" style="zoom: 33%;" />
+
+
+<div align=center><img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/实验室出入管理小程序二维码.jpg"/></div>
 
 
 
@@ -18,7 +22,9 @@
 >
 > 电子证书还没开放，后续再补充😅
 
-![](images/华南赛区.png)
+
+
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/华南赛区.png"/></div>
 
 
 
@@ -63,13 +69,13 @@
 
 `获取openid`
 
-![](images/获取openid.jpg)
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/获取openid.jpg"/></div>
 
 
 
 `订阅消息`
 
-![](images/订阅消息.jpg)
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/订阅消息.jpg"/></div>
 
 
 
@@ -87,7 +93,7 @@
 
 ​	共有5个页面，与底部dock栏一一对应
 
-![](images/dock栏.jpg)
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/dock栏.jpg"/></div>
 
 
 
@@ -103,27 +109,43 @@
 
 ​	首页主要是展示目前所在实验室的状态，有进入的时长，这间教室的出入日志，成员，公告，在线人数以及文件等。
 
-<div align=center>  <table><tr>    <img width="30%" src=images/首页1.jpg/>    <img width="30%" src=images/首页2.jpg/><img width="30%" src=images/首页3.jpg/>    </tr></table></div>
+<div align=center>  <table><tr>    <img width="20%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/首页1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/首页2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/首页3.jpg"/>  </tr></table></div>
+
+
+
 ​	如果此时不在实验室，则可以`模拟选择教室进入`，并发送打卡通知，进入实验室前会判定你是否在其他实验室，如果在就提醒要先离开那间实验室
 
-<div align=center>  <table><tr>    <img width="30%" src=images/首页4.jpg/>    <img width="30%" src=images/订阅消息.jpg/>   </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/首页4.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/订阅消息.jpg"/>    </tr></table></div>
+
+
+
 之后可以点击右下角按钮`模拟退出实验室`
 
+<div align=center>  <table><tr>    <img width="50%" src="images/https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/获取openid.jpg.jpg"/>    <img width="50%" src="images/https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/获取openid.jpg.jpg"/>    </tr></table></div>
+
 <div align=center>  <table><tr>    <img width="30%" src=images/首页5.jpg/>    <img width="30%" src=images/首页6.jpg/>   </tr></table></div>
+
 
 
 ## 4.2日志
 
 根据时间逆序查看自己的日志，还可以根据日期时间段进行筛选
 
-<div align=center>  <table><tr>    <img width="30%" src=images/日志1.jpg/>    <img width="30%" src=images/日志2.jpg/>   </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/日志1.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/日志2.jpg"/>    </tr></table></div>
+
+
+
+
+
 点击我的实验室可以查看我去过的实验室，点击卡片可以看到我在这间实验室的日志
 
-<div align=center>  <table><tr>    <img width="30%" src=images/日志3.jpg/>    <img width="30%" src=images/日志4.jpg/>   </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/日志3.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/日志4.jpg"/>    </tr></table></div>
 
 
 
-## 4.3仪表盘
+
+
+## 4.3控制台
 
 权限说明
 
@@ -133,7 +155,9 @@
 
 
 
-<div align=center>  <table><tr>    <img width="30%" src=images/仪表盘1.jpg/>    <img width="30%" src=images/仪表盘2.jpg/><img width="30%" src=images/仪表盘3.jpg/>    </tr></table></div>
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/仪表盘1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/仪表盘2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/仪表盘3.jpg"/>  </tr></table></div>
+
+
 
 
 
@@ -141,7 +165,11 @@
 
 排行榜类似`微信运动`，可以查看目前谁的活跃时长最高，每天都会重新算
 
-![](images/rank.jpg)
+
+
+<div align=center>    <img  src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/rank.jpg"/> </div>
+
+
 
 
 
@@ -149,11 +177,21 @@
 
 我的界面，需要在这里实名手机绑定，在学校用基本调用接口输入学号密码，但这里为了安全性只能模拟用手机绑定。
 
-<div align=center>  <table><tr>    <img width="30%" src=images/我的1.jpg/>    <img width="30%" src=images/我的2.jpg/><img width="30%" src=images/我的3.jpg/>    </tr></table></div>
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/我的1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/我的2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/我的3.jpg"/>  </tr></table></div>
 
 
 
-# 5.原文地址
+# 五.后记
+
+
+
+
+
+
+
+
+
+# 六.原文地址
 
 https://wiki.lifeisgg.online/archives/MyProject-AttendanceMiniprogram/
 
