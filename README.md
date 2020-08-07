@@ -60,7 +60,7 @@ Github
 
 > - 使用了第三方组件库ColorUi,uView组件作为前端设计的组件库
 > - IDE：微信开发者工具，HbuilderX
-> - 框架：[uniapp](https://uniapp.dcloud.io/)(一款能发布到多端的Vue框架)，并没有用开发者工具去写，因为开发者工具的语法微信自定义太多了，按照[uniapp](https://ask.dcloud.net.cn/article/35947)官方原话来说，就是不伦不类的语法:anger:，两个我都有试过，自己的确更喜欢接近Vue原生的语法。在HbuilderX写好后能自动编译在开发者工具。
+> - 框架：[uniapp](https://uniapp.dcloud.io/)(一款能发布到多端的Vue框架)，并没有用开发者工具去写，因为开发者工具的语法微信自定义太多了，按照[uniapp官方原话](https://ask.dcloud.net.cn/article/35947)来说，就是不伦不类的语法，两个我都有试过，自己的确更喜欢接近Vue原生的语法。在HbuilderX写好后能自动编译在开发者工具。
 
 
 
@@ -132,11 +132,11 @@ Github
 
 
 
-<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home3.jpg"/>  </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home1.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home2.jpg"/>   </tr></table></div>
 
+<div align=center>  <table><tr>   <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home3.jpg"/> <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home4.jpg"/>    </tr></table></div>
 
-
-<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home4.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home5.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home6.jpg"/>  </tr></table></div>
+<div align=center>  <table><tr>     <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home5.jpg"/>  <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home6.jpg"/>  </tr></table></div>
 
 
 
@@ -196,7 +196,7 @@ Github
 
 
 
-在**概览**页面，
+在**概览**页面
 
 - 超管：**查看监控(TODO)**，**关闭开放实验室(如果实验室有人会提醒)**，**添加删除此房间管理员**，超管默认为管理员，没分配时不会显示，分配后会头像会显示**超管**
 - 管理员：**查看监控(TODO)**，**关闭开放实验室(如果实验室有人会提醒)**
@@ -239,7 +239,7 @@ Github
 
 # 五.后记
 
-​	由于小程序比较复杂，这也造成了评委体验时对我的小程序有点懵的状况，在大家在群里都开始评审的时候我的小程序老师只是来踩了踩点便没了动静，得亏我反馈并说明后才有老师使用，后来在群里也看到有几个人说小程序没有被评审。主办方那边也算负责到底，及时组织评委去使用只是踩了踩点的小程序。除了评委老师可能疏漏的原因(作品数还是比较多的)，我也吸取了教训，就是一开始的用户体验和引导非常重要，能做到手把手教那种更好，避免一上来就要登录或者填写一大推表单的情况（真的会让人瞬间感到烦躁）。还有就是要符合小程序轻量，方便的特点，有些地方做做减法反而效果更好(我也参考了那些入围全国比赛的小程序)。但这些属于前端的灵魂的东西，包括独特的UI设计那些，对于作为后端狗的我来说貌似不太感冒。我在想，或许那些优雅的用户体验前端设计的背后一定是一个温柔细致体贴的人吧😇。
+​	由于小程序比较复杂，这也造成了评委体验时对我的小程序有点懵的状况，在大家在群里都开始评审的时候我的小程序老师只是来踩了踩点便没了动静，得亏我反馈并说明后才有老师使用，后来在群里也看到有几个人说小程序没有被评审。主办方那边也算挺负责，及时组织评委去使用只是踩了踩点的小程序。除了评委老师可能疏漏的原因(作品数还是比较多的)，我也吸取了教训，就是一开始的用户体验和引导非常重要，能做到手把手教那种更好，避免一上来就要登录或者填写一大推表单的情况（真的会让人瞬间感到烦躁）。还有就是要符合小程序轻量，方便的特点，有些地方做做减法反而效果更好(我也参考了那些入围全国比赛的小程序)。但这些属于前端的灵魂的东西，包括独特的UI设计那些，对于作为后端狗的我来说貌似不太感冒。我在想，或许那些优雅的用户体验前端设计的背后一定是一个温柔细致体贴的人吧😇。
 
-​	最后还是想说，这个比赛有一定的水分，自己也看了看获奖的小程序，有些真的是过于简单，比如调用第三方接口识图，还有那些综合科普信息展示答题类，更多的是纯静态信息显示，并没有多少难度，比赛结果后也没有分数。再者，有些小程序背靠团队企业资源，名校倾向啥的我也不谈。在答辩过程中准备的PPT那些商业计划啥的准备的很完整，而比赛规定中有一条是没有参加过其他省级以上比赛的项目，而这些却很难去求证了。再者还有条规定，核心功能在19年9月份前开发的小程序算违规，这些也很难去求证了。但是比赛过程中，比赛方的态度都很好，也都有耐心回答我们的问题，群里面也有人展示小程序然后一起讨论，算不错的比赛体验了。最后拿了个华南赛区二等奖也算是对我那几个星期熬夜的慰问了吧(也不知道对找工作有没有用😂)。
+​	最后还是想说，这个比赛有一定的水分，自己也看了看获奖的小程序，有些真的是过于简单，比如调用第三方接口识图，还有那些综合科普信息展示答题类，更多的是纯静态信息显示，并没有多少难度，比赛结果后也没有分数。再者，有些小程序背靠团队企业资源，名校倾向啥的我也不谈。在答辩过程中准备的PPT那些商业计划啥的准备的很完整，而比赛规定中有一条是没有参加过其他省级以上比赛的项目，而这些却很难去求证了。再者还有条规定，核心功能在19年9月份前开发的小程序算违规，这些也很难去求证了。但是比赛过程中，比赛方的态度都很好，也都有耐心回答我们的问题，群里面也有人展示小程序然后一起讨论，也算不错的比赛体验了。最后拿了个华南赛区二等奖也算是对我那几个星期熬夜的慰问了吧(也不知道对找工作有没有用😂)。
 
