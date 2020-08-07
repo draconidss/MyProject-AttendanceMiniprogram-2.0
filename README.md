@@ -1,4 +1,4 @@
-<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/logo.png"/></div>
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/logo.png"/></div>
 
 
 
@@ -8,7 +8,7 @@
 
 
 
-<div align=center><img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/实验室出入管理小程序二维码.jpg"/></div>
+<div align=center><img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/实验室出入管理小程序二维码.jpg"/></div>
 
 
 
@@ -24,7 +24,7 @@
 
 
 
-<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/华南赛区.png"/></div>
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/华南赛区.png"/></div>
 
 
 
@@ -69,13 +69,13 @@
 
 `获取openid`
 
-<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/获取openid.jpg"/></div>
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/获取openid.jpg"/></div>
 
 
 
 `订阅消息`
 
-<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/订阅消息.jpg"/></div>
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/订阅消息.jpg"/></div>
 
 
 
@@ -93,7 +93,7 @@
 
 ​	共有5个页面，与底部dock栏一一对应
 
-<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/dock栏.jpg"/></div>
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/dock栏.jpg"/></div>
 
 
 
@@ -109,21 +109,21 @@
 
 ​	首页主要是展示目前所在实验室的状态，有进入的时长，这间教室的出入日志，成员，公告，在线人数以及文件等。
 
-<div align=center>  <table><tr>    <img width="20%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/首页1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/首页2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/首页3.jpg"/>  </tr></table></div>
+<div align=center>  <table><tr>    <img width="20%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/首页1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/首页2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/首页3.jpg"/>  </tr></table></div>
 
 
 
 ​	如果此时不在实验室，则可以`模拟选择教室进入`，并发送打卡通知，进入实验室前会判定你是否在其他实验室，如果在就提醒要先离开那间实验室
 
-<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/首页4.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/订阅消息.jpg"/>    </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/首页4.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/订阅消息.jpg"/>    </tr></table></div>
 
 
 
 之后可以点击右下角按钮`模拟退出实验室`
 
-<div align=center>  <table><tr>    <img width="50%" src="images/https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/获取openid.jpg.jpg"/>    <img width="50%" src="images/https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/获取openid.jpg.jpg"/>    </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="images/readme/https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/获取openid.jpg.jpg"/>    <img width="50%" src="images/readme/https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/获取openid.jpg.jpg"/>    </tr></table></div>
 
-<div align=center>  <table><tr>    <img width="30%" src=images/首页5.jpg/>    <img width="30%" src=images/首页6.jpg/>   </tr></table></div>
+<div align=center>  <table><tr>    <img width="30%" src=images/readme/首页5.jpg/>    <img width="30%" src=images/readme/首页6.jpg/>   </tr></table></div>
 
 
 
@@ -131,7 +131,7 @@
 
 根据时间逆序查看自己的日志，还可以根据日期时间段进行筛选
 
-<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/日志1.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/日志2.jpg"/>    </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/日志1.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/日志2.jpg"/>    </tr></table></div>
 
 
 
@@ -139,7 +139,7 @@
 
 点击我的实验室可以查看我去过的实验室，点击卡片可以看到我在这间实验室的日志
 
-<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/日志3.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/日志4.jpg"/>    </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/日志3.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/日志4.jpg"/>    </tr></table></div>
 
 
 
@@ -155,7 +155,7 @@
 
 
 
-<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/仪表盘1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/仪表盘2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/仪表盘3.jpg"/>  </tr></table></div>
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/仪表盘1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/仪表盘2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/仪表盘3.jpg"/>  </tr></table></div>
 
 
 
@@ -167,7 +167,7 @@
 
 
 
-<div align=center>    <img  src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/rank.jpg"/> </div>
+<div align=center>    <img  src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/rank.jpg"/> </div>
 
 
 
@@ -177,7 +177,7 @@
 
 我的界面，需要在这里实名手机绑定，在学校用基本调用接口输入学号密码，但这里为了安全性只能模拟用手机绑定。
 
-<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/我的1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/我的2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/我的3.jpg"/>  </tr></table></div>
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/我的1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/我的2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/我的3.jpg"/>  </tr></table></div>
 
 
 
