@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-notice-bar.data-v-3b316736 {
+.u-notice-bar.data-v-475fdbf0 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -19,7 +19,7 @@
   padding: 18rpx 24rpx;
   overflow: hidden;
 }
-.u-swiper.data-v-3b316736 {
+.u-swiper.data-v-475fdbf0 {
   font-size: 26rpx;
   height: 32rpx;
   display: -webkit-box;
@@ -33,7 +33,7 @@
           flex: 1;
   margin-left: 12rpx;
 }
-.u-swiper-item.data-v-3b316736 {
+.u-swiper-item.data-v-475fdbf0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -42,10 +42,10 @@
           align-items: center;
   overflow: hidden;
 }
-.u-news-item.data-v-3b316736 {
+.u-news-item.data-v-475fdbf0 {
   overflow: hidden;
 }
-.u-right-icon.data-v-3b316736 {
+.u-right-icon.data-v-475fdbf0 {
   margin-left: 12rpx;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -54,7 +54,7 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.u-left-icon.data-v-3b316736 {
+.u-left-icon.data-v-475fdbf0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: inline-flex;

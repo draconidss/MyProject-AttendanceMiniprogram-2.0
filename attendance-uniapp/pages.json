@@ -3,54 +3,46 @@
 		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [{
-		"path": "pages/home/home",
-		"style": {}
-	},{
-		"path": "pages/log/log",
-		"style": {}
-	}, {
-		"path": "pages/rank/rank",
-		"style": {}
-	}, {
-		"path": "pages/profile/profile",
-		"style": {}
-	}, {
-		"path": "pages/dashboard/dashboard",
-		"style": {}
-	}    ,{
-            "path" : "pages/profile/profileDemo",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/home/homeDemo",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/dashboard/dashboardDemo",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/dashboard/user",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/dashboard/room",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/dashboard/roomDemo",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/dashboard/addNotice",
-            "style" : {}
-        }
-       
-        ,{
-            "path" : "pages/profile/reference",
-            "style" : {}
-        }
-    ],
+			"path": "pages/home/home",
+			"style": {}
+		}, {
+			"path": "pages/log/log",
+			"style": {}
+		}, {
+			"path": "pages/rank/rank",
+			"style": {}
+		}, {
+			"path": "pages/profile/profile",
+			"style": {}
+		}, {
+			"path": "pages/dashboard/dashboard",
+			"style": {}
+		}, {
+			"path": "pages/profile/profileDemo",
+			"style": {}
+		}, {
+			"path": "pages/home/homeDemo",
+			"style": {}
+		}, {
+			"path": "pages/dashboard/dashboardDemo",
+			"style": {}
+		}, {
+			"path": "pages/dashboard/user",
+			"style": {}
+		}, {
+			"path": "pages/dashboard/room",
+			"style": {}
+		}, {
+			"path": "pages/dashboard/roomDemo",
+			"style": {}
+		}
+
+
+		, {
+			"path": "pages/profile/reference",
+			"style": {}
+		}
+	],
 
 
 	"tabBar": {

@@ -3,9 +3,8 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-grid-item.data-v-4065c6cc {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.u-grid-item.data-v-54899586 {
+  box-sizing: border-box;
   background: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -24,18 +23,18 @@
   position: relative;
   float: left;
 }
-.u-grid-item-hover.data-v-4065c6cc {
+.u-grid-item-hover.data-v-54899586 {
   background: #f7f7f7 !important;
 }
-.u-grid-marker-box.data-v-4065c6cc {
+.u-grid-marker-box.data-v-54899586 {
   position: absolute;
   display: inline-block;
   line-height: 0;
 }
-.u-grid-marker-wrap.data-v-4065c6cc {
+.u-grid-marker-wrap.data-v-54899586 {
   position: absolute;
 }
-.u-grid-item-box.data-v-4065c6cc {
+.u-grid-item-box.data-v-54899586 {
   padding: 30rpx 0;
   display: -webkit-box;
   display: -webkit-flex;

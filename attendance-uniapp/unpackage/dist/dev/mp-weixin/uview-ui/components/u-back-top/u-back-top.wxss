@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-back-top.data-v-6b97bf66 {
+.u-back-top.data-v-b41816c0 {
   width: 80rpx;
   height: 80rpx;
   position: fixed;
@@ -26,7 +26,7 @@
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
-.u-back-top__tips.data-v-6b97bf66 {
+.u-back-top__tips.data-v-b41816c0 {
   font-size: 24rpx;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);

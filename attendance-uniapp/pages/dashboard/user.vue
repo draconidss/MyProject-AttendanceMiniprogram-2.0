@@ -482,16 +482,47 @@
 				userRoom_len: 0,
 				userAdminRoom_len: 0,
 				regDate: null,
-				lastLoginDate: null,
+				lastLoginDate: null
 			}
 		},
 		onPageScroll(e) {
 			this.scrollTop = e.scrollTop;
 		},
-		onShow() {
+
+		onLoad: function(option) {
+			uni.showShareMenu({
+				withShareTicket: true,
+				menus: ['shareAppMessage', 'shareTimeline']
+			})
+			
 			var that = this
 			that.getAllUser()
+			var shareUserDetail = option.shareUserDetail
+			if (shareUserDetail == "true") {
+				that.showUserDetail(parseInt(option.shareUserId))
 
+			}
+		},
+
+		onShareAppMessage: function() {
+			if (this.modalName == "showUserDetail") {
+				return {
+					title: "[控制台]查看用户" + this.userDetail.realName + "的详情",
+					path: "/pages/dashboard/user?shareUserDetail=" + true + "&shareUserId=" + this.userDetail.uid
+				}
+			} else {
+				return {
+					title: "[控制台]查看所有用户",
+					path: "/pages/dashboard/user?shareUserDetail=" + false + "&shareUserId=" + null
+				}
+			}
+		},
+
+		onShareTimeline: function() {
+				return {
+					title: "[控制台]查看所有用户",
+					path: "/pages/dashboard/user?shareUserDetail=" + false + "&shareUserId=" + null
+				}
 
 		},
 

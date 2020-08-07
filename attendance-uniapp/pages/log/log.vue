@@ -317,6 +317,10 @@
 		},
 
 		onShow() {
+			uni.showShareMenu({
+				withShareTicket: true,
+				menus: ['shareAppMessage', 'shareTimeline']
+			})
 
 			var that = this
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
@@ -330,6 +334,21 @@
 				that.getLogAndDuration(e)
 			}
 
+		},
+		
+		onShareAppMessage: function() {
+			return {
+				title: "查看自己进出实验室的记录",
+				path: '/pages/log/log'
+			}
+		
+		},
+		
+		onShareTimeline:function(){
+			return {
+				title: "查看自己进出实验室的记录",
+				imageUrl: "https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3828130167&token=1611511643"
+			}
 		},
 
 		methods: {

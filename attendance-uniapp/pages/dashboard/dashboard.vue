@@ -331,11 +331,12 @@
 
 			<block v-else>
 				<u-cell-group>
-					<navigator url="../profile/profile" open-type="switchTab">
-						<u-cell-item :arrow="true" title="只有超级管理员能查看" value="去成为超级管理员">
-							<u-icon slot="icon" size="38" name="warning" color="#ff9900" class="padding-right-sm"></u-icon>
-						</u-cell-item>
-					</navigator>
+					<u-cell-item :arrow="false" title="只有超级管理员能查看" >
+						<u-icon slot="icon" size="38" name="warning" color="#ff9900" class="padding-right-sm"></u-icon>
+					</u-cell-item>
+					
+<!-- 					<navigator url="../profile/profile" open-type="switchTab">						
+					</navigator> -->
 				</u-cell-group>
 
 			</block>
@@ -349,11 +350,12 @@
 		<block v-if="currentTabs == 2">
 			<block v-if="userInfo.level != 1">
 				<u-cell-group>
-					<navigator url="../profile/profile" open-type="switchTab">
-						<u-cell-item :arrow="true" title="您只能查看您管理的实验室的日志" value="去成为超级管理员">
-							<u-icon slot="icon" size="38" name="warning" color="#ff9900" class="padding-right-sm"></u-icon>
-						</u-cell-item>
-					</navigator>
+					<u-cell-item :arrow="false" title="您只能查看您管理的实验室的日志" >
+						<u-icon slot="icon" size="38" name="warning" color="#ff9900" class="padding-right-sm"></u-icon>
+					</u-cell-item>
+					
+<!-- 					<navigator url="../profile/profile" open-type="switchTab">
+					</navigator> -->
 				</u-cell-group>
 
 			</block>
@@ -525,6 +527,10 @@
 			this.scrollTop = e.scrollTop;
 		},
 		onShow() {
+			uni.showShareMenu({
+				withShareTicket: true,
+				menus: ['shareAppMessage', 'shareTimeline']
+			})
 
 			var that = this
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
@@ -547,6 +553,22 @@
 			}
 
 		},
+		
+		onShareAppMessage: function() {
+			return {
+				title: "实验室控制台页面",
+				path: '/pages/dashboard/dashboard'
+			}
+		
+		},
+		
+		onShareTimeline:function(){
+			return {
+				title: "实验室控制台页面",
+				path: '/pages/dashboard/dashboard'
+			}
+		},
+		
 		methods: {
 			// 去实验室索引列表
 			toRoomDetail(e) {
@@ -577,7 +599,7 @@
 					return false
 				} else {
 					uni.navigateTo({
-						url: "user"
+						url: "user?shareUserDetail="+false
 					})
 				}
 

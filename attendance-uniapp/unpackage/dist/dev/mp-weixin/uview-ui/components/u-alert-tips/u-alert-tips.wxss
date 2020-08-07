@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-alert-tips.data-v-6c336026 {
+.u-alert-tips.data-v-069e6860 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -11,18 +11,17 @@
   -webkit-align-items: center;
           align-items: center;
   padding: 16rpx 30rpx;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
   position: relative;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   border: 1px solid #fff;
 }
-.u-close-alert-tips.data-v-6c336026 {
+.u-close-alert-tips.data-v-069e6860 {
   opacity: 0;
   visibility: hidden;
 }
-@-webkit-keyframes myfirst-data-v-6c336026 {
+@-webkit-keyframes myfirst-data-v-069e6860 {
 from {
     height: 100%;
 }
@@ -30,7 +29,7 @@ to {
     height: 0;
 }
 }
-@keyframes myfirst-data-v-6c336026 {
+@keyframes myfirst-data-v-069e6860 {
 from {
     height: 100%;
 }
@@ -38,27 +37,27 @@ to {
     height: 0;
 }
 }
-.u-icon.data-v-6c336026 {
+.u-icon.data-v-069e6860 {
   margin-right: 16rpx;
 }
-.u-alert-title.data-v-6c336026 {
+.u-alert-title.data-v-069e6860 {
   font-size: 28rpx;
   color: #303133;
 }
-.u-alert-desc.data-v-6c336026 {
+.u-alert-desc.data-v-069e6860 {
   font-size: 26rpx;
   text-align: left;
   color: #606266;
 }
-.u-close-icon.data-v-6c336026 {
+.u-close-icon.data-v-069e6860 {
   position: absolute;
   top: 20rpx;
   right: 20rpx;
 }
-.u-close-hover.data-v-6c336026 {
+.u-close-hover.data-v-069e6860 {
   color: red;
 }
-.u-close-text.data-v-6c336026 {
+.u-close-text.data-v-069e6860 {
   font-size: 24rpx;
   color: #909399;
   position: absolute;

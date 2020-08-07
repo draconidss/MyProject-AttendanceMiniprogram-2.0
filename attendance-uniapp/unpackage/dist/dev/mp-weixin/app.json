@@ -11,7 +11,6 @@
     "pages/dashboard/user",
     "pages/dashboard/room",
     "pages/dashboard/roomDemo",
-    "pages/dashboard/addNotice",
     "pages/profile/reference"
   ],
   "subPackages": [],
@@ -68,5 +67,5 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"
   },
-  "sitemapLocation": "sitemap68.json"
+  "sitemapLocation": "sitemap65.json"
 }

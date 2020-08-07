@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-divider.data-v-897e45ec {
+.u-divider.data-v-23bd18c4 {
   width: 100%;
   position: relative;
   text-align: center;
@@ -22,14 +22,14 @@
   -webkit-flex-direction: row;
           flex-direction: row;
 }
-.u-divider-line.data-v-897e45ec {
+.u-divider-line.data-v-23bd18c4 {
   border-bottom: 1px solid #e4e7ed;
   -webkit-transform: scale(1, 0.5);
           transform: scale(1, 0.5);
   -webkit-transform-origin: center;
           transform-origin: center;
 }
-.u-divider-text.data-v-897e45ec {
+.u-divider-text.data-v-23bd18c4 {
   white-space: nowrap;
   padding: 0 16rpx;
   display: -webkit-inline-box;

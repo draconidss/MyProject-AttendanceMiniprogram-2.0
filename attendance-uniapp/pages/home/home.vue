@@ -481,8 +481,16 @@
 			var that = this
 
 			uni.setEnableDebug({
-				enableDebug: true
+				enableDebug: false
 			})
+			
+			
+			uni.showShareMenu({
+				withShareTicket: true,
+				menus: ['shareAppMessage', 'shareTimeline']
+			})
+			
+			
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
 			global.getUserInfo()
 			that.userInfo = uni.getStorageSync("userInfo")
@@ -490,6 +498,22 @@
 			that.getStatus()
 
 		},
+		
+		onShareAppMessage: function() {
+			return {
+				title: "模拟进出实验室",
+				path: '/pages/home/home'
+			}
+		
+		},
+		
+		onShareTimeline:function(){
+			return {
+				title: "模拟进出实验室",
+				imageUrl: "https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3828130167&token=1611511643"
+			}
+		},
+		
 		methods: {
 			showAdmin() {
 				this.currentTabs = 2

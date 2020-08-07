@@ -5,8 +5,7 @@
  */
 view,
 scroll-view {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 ::-webkit-scrollbar,::-webkit-scrollbar,::-webkit-scrollbar {
   display: none;

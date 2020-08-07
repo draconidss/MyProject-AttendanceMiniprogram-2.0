@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.u-collapse-head.data-v-25cd533e {
+.u-collapse-head.data-v-31fbc7f8 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -20,30 +20,30 @@
   padding: 24rpx 0;
   text-align: left;
 }
-.u-collapse-title.data-v-25cd533e {
+.u-collapse-title.data-v-31fbc7f8 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
   overflow: hidden;
 }
-.u-arrow-down-icon.data-v-25cd533e {
+.u-arrow-down-icon.data-v-31fbc7f8 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin-right: 20rpx;
   margin-left: 14rpx;
 }
-.u-arrow-down-icon-active.data-v-25cd533e {
+.u-arrow-down-icon-active.data-v-31fbc7f8 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transform-origin: center center;
           transform-origin: center center;
 }
-.u-collapse-body.data-v-25cd533e {
+.u-collapse-body.data-v-31fbc7f8 {
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.u-collapse-content.data-v-25cd533e {
+.u-collapse-content.data-v-31fbc7f8 {
   overflow: hidden;
   font-size: 28rpx;
   color: #909399;

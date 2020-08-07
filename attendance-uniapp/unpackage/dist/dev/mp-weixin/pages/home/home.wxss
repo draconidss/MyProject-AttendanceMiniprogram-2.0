@@ -25,10 +25,8 @@
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
 	        flex-direction: column;
-	-webkit-box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
-	        box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+	border-radius: 10rpx;
 }
 .indexBar-item {
 	-webkit-box-flex: 1;
@@ -72,8 +70,7 @@ movable-view.indexBar-item::before {
 	background: rgba(0, 0, 0, 0.5);
 	width: 100rpx;
 	height: 100rpx;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 	margin: auto;
 	color: #fff;
 	line-height: 100rpx;
@@ -95,8 +92,7 @@ movable-view.indexBar-item::before {
 	-webkit-transform: scale(0.9, 0.9);
 	        transform: scale(0.9, 0.9);
 	left: 85vw;
-	-webkit-box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2);
 	-webkit-transform-origin: 0;
 	        transform-origin: 0;
 }
@@ -137,7 +133,6 @@ movable-view.indexBar-item::before {
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
 	        justify-content: center;
-	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.01)), to(rgba(0, 0, 0, 0.6)));
 	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6));
 	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6));
 	letter-spacing: 5px;
@@ -179,8 +174,7 @@ movable-view.indexBar-item::before {
 	background-color: currentColor;
 	position: absolute;
 	bottom: 10rpx;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 	left: 0;
 	right: 0;
 	margin: auto;

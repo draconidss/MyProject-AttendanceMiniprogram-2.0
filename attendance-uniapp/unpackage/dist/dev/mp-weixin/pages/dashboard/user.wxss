@@ -714,6 +714,37 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 抽屉样式 */
 .DrawerPage {
 	position: absolute;
@@ -728,8 +759,7 @@
 	-webkit-transform: scale(0.9, 0.9);
 	        transform: scale(0.9, 0.9);
 	left: 85vw;
-	-webkit-box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2);
 	-webkit-transform-origin: 0;
 	        transform-origin: 0;
 }
@@ -770,7 +800,6 @@
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
 	        justify-content: center;
-	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.01)), to(rgba(0, 0, 0, 0.6)));
 	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6));
 	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6));
 	letter-spacing: 5px;
@@ -812,8 +841,7 @@
 	background-color: currentColor;
 	position: absolute;
 	bottom: 10rpx;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 	left: 0;
 	right: 0;
 	margin: auto;

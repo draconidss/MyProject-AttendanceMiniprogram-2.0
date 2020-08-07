@@ -14,13 +14,11 @@
   -webkit-align-items: center;
           align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 6rpx rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 6rpx rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6rpx rgba(0, 0, 0, 0.4);
   color: #fff;
   width: 80rpx;
   height: 80rpx;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   font-size: 24rpx;
   position: fixed;
   z-index: 999999;

@@ -620,6 +620,12 @@
 			this.scrollTop = e.scrollTop;
 		},
 		onLoad: function(option) {
+			uni.showShareMenu({
+				withShareTicket: true,
+				menus: ['shareAppMessage', 'shareTimeline']
+			})
+			
+			
 			var that = this
 			console.log(option)
 			that.rid = parseInt(option.rid)
@@ -644,6 +650,22 @@
 				this.changeRoomStatus(newValue, oldValue)
 			}
 		},
+		
+		onShareAppMessage: function() {
+			return {
+				title: "[控制台]实验室"+this.rname+"详情",
+				path: "/pages/dashboard/room?rid=" + this.rid + '&rname=' + this.rname + '&address=' + this.address + '&del=' + this.del
+			}
+		
+		},
+		
+		onShareTimeline:function(){
+			return {
+				title: "[控制台]实验室"+this.rname+"详情",
+				path: "/pages/dashboard/room?rid=" + this.rid + '&rname=' + this.rname + '&address=' + this.address + '&del=' + this.del
+			}
+		},
+		
 		methods: {
 			adminTabsChange(index) {
 				var that = this

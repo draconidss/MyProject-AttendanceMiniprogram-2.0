@@ -3,7 +3,7 @@
  * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-.uni-fab.data-v-eeeef158 {
+.uni-fab.data-v-7018754c {
   position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,30 +16,30 @@
           align-items: center;
   z-index: 10;
 }
-.uni-fab--active.data-v-eeeef158 {
+.uni-fab--active.data-v-7018754c {
   opacity: 1;
 }
-.uni-fab--leftBottom.data-v-eeeef158 {
+.uni-fab--leftBottom.data-v-7018754c {
   left: 5px;
   bottom: 20px;
   padding: 10px;
 }
-.uni-fab--leftTop.data-v-eeeef158 {
+.uni-fab--leftTop.data-v-7018754c {
   left: 5px;
   top: 30px;
   padding: 10px;
 }
-.uni-fab--rightBottom.data-v-eeeef158 {
+.uni-fab--rightBottom.data-v-7018754c {
   right: 5px;
   bottom: 20px;
   padding: 10px;
 }
-.uni-fab--rightTop.data-v-eeeef158 {
+.uni-fab--rightTop.data-v-7018754c {
   right: 5px;
   top: 30px;
   padding: 10px;
 }
-.uni-fab__circle.data-v-eeeef158 {
+.uni-fab__circle.data-v-7018754c {
   position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -53,42 +53,41 @@
   width: 55px;
   height: 55px;
   background-color: #3c3e49;
-  -webkit-border-radius: 55px;
-          border-radius: 55px;
+  border-radius: 55px;
   z-index: 11;
 }
-.uni-fab__circle--leftBottom.data-v-eeeef158 {
+.uni-fab__circle--leftBottom.data-v-7018754c {
   left: 15px;
   bottom: 30px;
 }
-.uni-fab__circle--leftTop.data-v-eeeef158 {
+.uni-fab__circle--leftTop.data-v-7018754c {
   left: 15px;
   top: 40px;
 }
-.uni-fab__circle--rightBottom.data-v-eeeef158 {
+.uni-fab__circle--rightBottom.data-v-7018754c {
   right: 15px;
   bottom: 30px;
 }
-.uni-fab__circle--rightTop.data-v-eeeef158 {
+.uni-fab__circle--rightTop.data-v-7018754c {
   right: 15px;
   top: 40px;
 }
-.uni-fab__circle--left.data-v-eeeef158 {
+.uni-fab__circle--left.data-v-7018754c {
   left: 0;
 }
-.uni-fab__circle--right.data-v-eeeef158 {
+.uni-fab__circle--right.data-v-7018754c {
   right: 0;
 }
-.uni-fab__circle--top.data-v-eeeef158 {
+.uni-fab__circle--top.data-v-7018754c {
   top: 0;
 }
-.uni-fab__circle--bottom.data-v-eeeef158 {
+.uni-fab__circle--bottom.data-v-7018754c {
   bottom: 0;
 }
-.uni-fab__plus.data-v-eeeef158 {
+.uni-fab__plus.data-v-7018754c {
   font-weight: bold;
 }
-.fab-circle-v.data-v-eeeef158 {
+.fab-circle-v.data-v-7018754c {
   position: absolute;
   width: 3px;
   height: 31px;
@@ -102,7 +101,7 @@
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.fab-circle-h.data-v-eeeef158 {
+.fab-circle-h.data-v-7018754c {
   position: absolute;
   width: 31px;
   height: 3px;
@@ -116,13 +115,12 @@
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.uni-fab__plus--active.data-v-eeeef158 {
+.uni-fab__plus--active.data-v-7018754c {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-.uni-fab__content.data-v-eeeef158 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.uni-fab__content.data-v-7018754c {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -130,8 +128,7 @@
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
           flex-direction: row;
-  -webkit-border-radius: 55px;
-          border-radius: 55px;
+  border-radius: 55px;
   overflow: hidden;
   -webkit-transition-property: width, height;
   transition-property: width, height;
@@ -142,22 +139,21 @@
   border-width: 1rpx;
   border-style: solid;
 }
-.uni-fab__content--other-platform.data-v-eeeef158 {
+.uni-fab__content--other-platform.data-v-7018754c {
   border-width: 0px;
-  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 }
-.uni-fab__content--left.data-v-eeeef158 {
+.uni-fab__content--left.data-v-7018754c {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
           justify-content: flex-start;
 }
-.uni-fab__content--right.data-v-eeeef158 {
+.uni-fab__content--right.data-v-7018754c {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
-.uni-fab__content--flexDirection.data-v-eeeef158 {
+.uni-fab__content--flexDirection.data-v-7018754c {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -166,7 +162,7 @@
   -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
-.uni-fab__content--flexDirectionStart.data-v-eeeef158 {
+.uni-fab__content--flexDirectionStart.data-v-7018754c {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -175,7 +171,7 @@
   -webkit-justify-content: flex-start;
           justify-content: flex-start;
 }
-.uni-fab__content--flexDirectionEnd.data-v-eeeef158 {
+.uni-fab__content--flexDirectionEnd.data-v-7018754c {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -184,7 +180,7 @@
   -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
-.uni-fab__item.data-v-eeeef158 {
+.uni-fab__item.data-v-7018754c {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -204,19 +200,19 @@
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-.uni-fab__item--active.data-v-eeeef158 {
+.uni-fab__item--active.data-v-7018754c {
   opacity: 1;
 }
-.uni-fab__item-image.data-v-eeeef158 {
+.uni-fab__item-image.data-v-7018754c {
   width: 25px;
   height: 25px;
   margin-bottom: 3px;
 }
-.uni-fab__item-text.data-v-eeeef158 {
+.uni-fab__item-text.data-v-7018754c {
   color: #FFFFFF;
   font-size: 12px;
 }
-.uni-fab__item--first.data-v-eeeef158 {
+.uni-fab__item--first.data-v-7018754c {
   width: 55px;
 }
 

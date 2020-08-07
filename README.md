@@ -2,6 +2,14 @@
 
 
 
+原文链接
+
+> https://wiki.lifeisgg.online/archives/MyProject-AttendanceMiniprogram/
+
+Github
+
+> https://github.com/LifeAlsoIsGG/MyProject-AttendanceMiniprogram-2.0
+
 
 
 # 一.小程序二维码
@@ -30,7 +38,7 @@
 
 # 二.在开发之前
 
-​	这个项目原本是结合物联网硬件指纹和人脸识别的一款实验室出入管理的项目，主要也是为诸如**中国大学生计算机设计大赛，挑战杯，互联网+**等比赛准备的。我在三人团队中担任的职责是**小程序前后端开发**，之后恰巧看到这个微信小程序比赛的时候就想着拿来参赛了，当然线下的硬件只能用模拟的方式去进行，这也造成了评委体验时对我的小程序有点懵的状况，在大家都评审开始的时候我的小程序还没老师来用:neutral_face:，得亏我反馈并说明后才有老师使用(这个后面再说)。
+​	这个项目原本是结合物联网硬件指纹和人脸识别的一款实验室出入管理的项目，主要也是为诸如**中国大学生计算机设计大赛，挑战杯，互联网+**等比赛准备的。我在三人团队中担任的职责是**小程序前后端开发**，之后恰巧看到这个微信小程序比赛的时候就想着拿来参赛了，当然线下的硬件只能用模拟的方式去进行。
 
 
 
@@ -75,7 +83,7 @@
 
 `订阅消息`
 
-<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/订阅消息.jpg"/></div>
+<div align=center><img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/订阅消息.jpg"/></div>
 
 
 
@@ -105,49 +113,76 @@
 
 
 
-## 4.1首页
+## 4.1首页Home
 
-​	首页主要是展示目前所在实验室的状态，有进入的时长，这间教室的出入日志，成员，公告，在线人数以及文件等。
+当进入页面时会判断你当前在哪个实验室，如果不在则可以**模拟选择教室进入**，模拟进入后会发送打卡通知
 
-<div align=center>  <table><tr>    <img width="20%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/首页1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/首页2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/首页3.jpg"/>  </tr></table></div>
-
-
-
-​	如果此时不在实验室，则可以`模拟选择教室进入`，并发送打卡通知，进入实验室前会判定你是否在其他实验室，如果在就提醒要先离开那间实验室
-
-<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/首页4.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/订阅消息.jpg"/>    </tr></table></div>
-
-
-
-之后可以点击右下角按钮`模拟退出实验室`
-
-<div align=center>  <table><tr>    <img width="50%" src="images/readme/https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/获取openid.jpg.jpg"/>    <img width="50%" src="images/readme/https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/获取openid.jpg.jpg"/>    </tr></table></div>
-
-<div align=center>  <table><tr>    <img width="30%" src=images/readme/首页5.jpg/>    <img width="30%" src=images/readme/首页6.jpg/>   </tr></table></div>
-
-
-
-## 4.2日志
-
-根据时间逆序查看自己的日志，还可以根据日期时间段进行筛选
-
-<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/日志1.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/日志2.jpg"/>    </tr></table></div>
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home7.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/订阅消息.jpg"/>    </tr></table></div>	
 
 
 
 
 
-点击我的实验室可以查看我去过的实验室，点击卡片可以看到我在这间实验室的日志
+如果你在进入实验室后点击打开通知，则展示目前所在实验室的状态，可以查看如下
 
-<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/日志3.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/日志4.jpg"/>    </tr></table></div>
+- **顶部可以查看在线时长**
+- **这间教室的出入日志，公告，文件，概览等**
+- **实验室成员(已进入人员，已离开成员，管理员)**
+- **还有提醒在实验室时长超过六小时**
+
+
+
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home3.jpg"/>  </tr></table></div>
+
+
+
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home4.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home5.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home6.jpg"/>  </tr></table></div>
+
+
+
+之后点击右下角的按钮则可以**模拟退出实验室**，成功后也会发送打卡通知
+
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/home6.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/订阅消息.jpg"/>    </tr></table></div>
 
 
 
 
 
-## 4.3控制台
 
-权限说明
+
+## 4.2日志Log
+
+在这里可以查看自己进出实验室的日志记录，日志记录采用逆序显示，还可以根据时间选择区段查看
+
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/log1.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/log2.jpg"/>    </tr></table></div>
+
+
+
+
+
+点击Tab栏中**我的实验室**可以查看我去过的实验室，点击实验室卡片可以看到**我在这间实验室的日志**
+
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/log3.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/log4.jpg"/>    </tr></table></div>
+
+
+
+
+
+## 4.3控制台Dashboard
+
+控制台涉及比较多的CURD事务，也是小程序的核心功能，为了将复杂笨重的管理系统移植到小程序上，做了许多页面简化处理和友好的用户交互体验(但貌似还是过于笨重🏃) 
+
+|       权限/身份       |    超管    |  普通用户  |
+| :-------------------: | :--------: | :--------: |
+|    查看实验室详细     | 所有实验室 | 自己管理的 |
+|    关闭/开放实验室    | 所有实验室 | 自己管理的 |
+|      添加实验室       |     ✔️      |     ❌      |
+| 添加/删除实验室管理员 |     ✔️      |     ❌      |
+|  添加/删除实验室公告  | 所有实验室 | 自己管理的 |
+|   查看用户/用户详细   |     ✔️      |     ❌      |
+|   查看所有用户日志    |     ✔️      |     ❌      |
+
+
 
 > - 超级管理员：可以查看所有实验室，用户，日志，增加关闭教室，赋予用户为某个实验室的管理员，撤销某个实验室的管理员等等
 > - 管理员：能查看自己管理的实验室日志用户等，能发布公告在自己管理的实验室，总之基于自己管理的实验室。
@@ -155,43 +190,58 @@
 
 
 
-<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/仪表盘1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/仪表盘2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/仪表盘3.jpg"/>  </tr></table></div>
+- 控制台查看实验室，**点击卡片可以查看实验室详情**，超管可以查看所有实验室详情，普通用户只能查看自己管理的
+
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/admin1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/room1.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/room2.jpg"/>  </tr></table></div>
+
+
+
+在**概览**页面，
+
+- 超管：**查看监控(TODO)**，**关闭开放实验室(如果实验室有人会提醒)**，**添加删除此房间管理员**，超管默认为管理员，没分配时不会显示，分配后会头像会显示**超管**
+- 管理员：**查看监控(TODO)**，**关闭开放实验室(如果实验室有人会提醒)**
+
+
+
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/room3.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/room4.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/room5.jpg"/>  </tr></table></div>
+
+
+
+## 4.4排行榜Rank
+
+排行榜类似`微信运动`，可以查看目前谁的活跃时长最高，可以查看**当前周和当前月的活跃度排行榜**💯
+
+> TODO：图表显示，历史周和历史月排名
+
+
+
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/rank1.jpg"/>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/rank2.jpg"/>    </tr></table></div>
 
 
 
 
 
-## 4.4排行榜
+## 4.5我的Profile
 
-排行榜类似`微信运动`，可以查看目前谁的活跃时长最高，每天都会重新算
+我的界面，需要在这里实名手机绑定，在学校用基本调用接口输入学号密码，但这里为了方便只能模拟用手机绑定。在这里也可以主动申请服务消息的打卡通知，滑动接收消息的Switch即可。
 
-
-
-<div align=center>    <img  src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/rank.jpg"/> </div>
+<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/profile1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/profile2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/profile3.jpg"/>  </tr></table></div>
 
 
 
+点击最下方的**介绍&使用手册**可以帮助您更快地了解并使用小程序。
+
+<div align=center>  <table><tr>    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/refe.jpg"/>   </tr></table></div>
 
 
-## 4.5我的
-
-我的界面，需要在这里实名手机绑定，在学校用基本调用接口输入学号密码，但这里为了安全性只能模拟用手机绑定。
-
-<div align=center>  <table><tr>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/我的1.jpg"/>    <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/我的2.jpg"/>  <img width="30%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/我的3.jpg"/>  </tr></table></div>
 
 
 
 # 五.后记
 
+​	由于小程序比较复杂，这也造成了评委体验时对我的小程序有点懵的状况，在大家在群里都开始评审的时候我的小程序老师只是来踩了踩点便没了动静，得亏我反馈并说明后才有老师使用，后来在群里也看到有几个人说小程序没有被评审。主办方那边也算负责到底，及时组织评委去使用只是踩了踩点的小程序。除了评委老师可能疏漏的原因(作品数还是比较多的)，我也吸取了教训，就是一开始的用户体验和引导非常重要，能做到手把手教那种更好，避免一上来就要登录或者填写一大推表单的情况（真的会让人瞬间感到烦躁）。还有就是要符合小程序轻量，方便的特点，有些地方做做减法反而效果更好(我也参考了那些入围全国比赛的小程序)。但这些属于前端的灵魂的东西，包括独特的UI设计那些，对于作为后端狗的我来说貌似不太感冒。我在想，或许那些优雅的用户体验前端设计的背后一定是一个温柔细致体贴的人吧😇。
 
 
 
 
-
-
-
-
-# 六.原文地址
-
-https://wiki.lifeisgg.online/archives/MyProject-AttendanceMiniprogram/
 

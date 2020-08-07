@@ -179,14 +179,14 @@
 				</view>
 			</view>
 
-			<view class="cu-list card-menu  shadow">
+<!-- 			<view class="cu-list card-menu  shadow">
 				<u-cell-group>
 					<u-cell-item :arrow="true" title="一键成为超级管理员(测试用)" label="点击前请先实名注册" @tap="beAdmin">
 						<u-icon slot="icon" size="60" name="warning" color="#ff9900"></u-icon>
 					</u-cell-item>
 				</u-cell-group>
 
-			</view>
+			</view> -->
 
 
 			<view class="cu-card ">

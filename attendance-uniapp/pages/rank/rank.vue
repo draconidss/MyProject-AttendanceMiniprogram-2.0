@@ -109,6 +109,12 @@
 			this.scrollTop = e.scrollTop;
 		},
 		onShow() {
+			uni.showShareMenu({
+				withShareTicket: true,
+				menus: ['shareAppMessage', 'shareTimeline']
+			})
+
+
 			var that = this
 			that.wxuserInfo = uni.getStorageSync("wxuserInfo")
 			global.getUserInfo()
@@ -116,6 +122,22 @@
 			console.log("rank里的userInfo" + that.userInfo)
 			that.getRank()
 		},
+
+		onShareAppMessage: function() {
+			return {
+				title: "查看实验室活跃度",
+				path: '/pages/rank/rank'
+			}
+
+		},
+
+		onShareTimeline: function() {
+			return {
+				title: "查看实验室活跃度",
+				imageUrl: "https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3828130167&token=1611511643"
+			}
+		},
+
 		methods: {
 			tabsChange(index) {
 				var that = this
