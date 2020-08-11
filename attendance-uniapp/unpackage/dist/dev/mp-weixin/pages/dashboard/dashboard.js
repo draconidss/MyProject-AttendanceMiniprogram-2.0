@@ -990,8 +990,11 @@ var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ 8));funct
         success: function success(res) {
           console.log(res);
           that.hideModal();
-          that.getAllRoomList();
-          that.showToast("添加实验室成功", "success", "bottom");
+
+          setTimeout(function () {
+            that.getAllRoomList();
+            that.showToast("添加实验室成功", "success", "bottom");
+          }, 300);
 
         } });
 

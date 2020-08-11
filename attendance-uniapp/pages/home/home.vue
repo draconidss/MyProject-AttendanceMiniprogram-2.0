@@ -480,9 +480,9 @@
 		onShow() {
 			var that = this
 
-			uni.setEnableDebug({
+/* 			uni.setEnableDebug({
 				enableDebug: false
-			})
+			}) */
 			
 			
 			uni.showShareMenu({

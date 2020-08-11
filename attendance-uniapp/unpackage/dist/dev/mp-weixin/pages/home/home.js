@@ -707,9 +707,9 @@ var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ 8));funct
   onShow: function onShow() {
     var that = this;
 
-    uni.setEnableDebug({
-      enableDebug: false });
-
+    /* 			uni.setEnableDebug({
+                     				enableDebug: false
+                     			}) */
 
 
     uni.showShareMenu({

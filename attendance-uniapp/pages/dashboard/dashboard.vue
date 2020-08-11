@@ -17,7 +17,7 @@
 			<!-- 实验室总览 -->
 			<view class="bg-white">
 				<u-collapse style="background-color: white;z-index: 9999;">
-					<u-collapse-item title="实验室总览" :open="collapse" >
+					<u-collapse-item title="实验室总览" :open="collapse">
 						<!-- 状态栏 -->
 						<view class="cu-list grid col-4 ">
 							<view class="cu-item">
@@ -331,11 +331,11 @@
 
 			<block v-else>
 				<u-cell-group>
-					<u-cell-item :arrow="false" title="只有超级管理员能查看" >
+					<u-cell-item :arrow="false" title="只有超级管理员能查看">
 						<u-icon slot="icon" size="38" name="warning" color="#ff9900" class="padding-right-sm"></u-icon>
 					</u-cell-item>
-					
-<!-- 					<navigator url="../profile/profile" open-type="switchTab">						
+
+					<!-- 					<navigator url="../profile/profile" open-type="switchTab">						
 					</navigator> -->
 				</u-cell-group>
 
@@ -350,11 +350,11 @@
 		<block v-if="currentTabs == 2">
 			<block v-if="userInfo.level != 1">
 				<u-cell-group>
-					<u-cell-item :arrow="false" title="您只能查看您管理的实验室的日志" >
+					<u-cell-item :arrow="false" title="您只能查看您管理的实验室的日志">
 						<u-icon slot="icon" size="38" name="warning" color="#ff9900" class="padding-right-sm"></u-icon>
 					</u-cell-item>
-					
-<!-- 					<navigator url="../profile/profile" open-type="switchTab">
+
+					<!-- 					<navigator url="../profile/profile" open-type="switchTab">
 					</navigator> -->
 				</u-cell-group>
 
@@ -468,7 +468,7 @@
 				},
 				forList: [1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ],
 				// 样式data
-				collapse:true,
+				collapse: true,
 				showReadyAddRoom: false,
 				isCale: false,
 				scrollTop: 0,
@@ -553,22 +553,22 @@
 			}
 
 		},
-		
+
 		onShareAppMessage: function() {
 			return {
 				title: "实验室控制台页面",
 				path: '/pages/dashboard/dashboard'
 			}
-		
+
 		},
-		
-		onShareTimeline:function(){
+
+		onShareTimeline: function() {
 			return {
 				title: "实验室控制台页面",
 				path: '/pages/dashboard/dashboard'
 			}
 		},
-		
+
 		methods: {
 			// 去实验室索引列表
 			toRoomDetail(e) {
@@ -599,7 +599,7 @@
 					return false
 				} else {
 					uni.navigateTo({
-						url: "user?shareUserDetail="+false
+						url: "user?shareUserDetail=" + false
 					})
 				}
 
@@ -631,18 +631,18 @@
 					that.collapse = false
 					var e = {}
 					e.startDate = null
-					e.endDate = null				
+					e.endDate = null
 					that.getAllLog(e)
-				}else if(index == 1){
+				} else if (index == 1) {
 					that.collapse = false
-					if(that.userInfo.level != 1){
-						that.showToast("您的权限不够","warning","bottom")
-					}else{
+					if (that.userInfo.level != 1) {
+						that.showToast("您的权限不够", "warning", "bottom")
+					} else {
 						uni.navigateTo({
-							url:"user"
+							url: "user"
 						})
 					}
-					
+
 				}
 				that.currentTabs = index
 
@@ -766,8 +766,11 @@
 					success(res) {
 						console.log(res)
 						that.hideModal()
-						that.getAllRoomList()
-						that.showToast("添加实验室成功", "success", "bottom")
+
+						setTimeout(function() {
+							that.getAllRoomList()
+							that.showToast("添加实验室成功", "success", "bottom")
+						}, 300);
 
 					}
 				})
@@ -777,7 +780,7 @@
 			// 调用接口方法集
 			getAllLog(e) {
 				uni.showLoading({
-					title:"获取所有日志中"
+					title: "获取所有日志中"
 				})
 				var that = this
 				var startDate = e.startDate
@@ -803,27 +806,27 @@
 							that.logList = logList_2
 							that.startDate = startDate
 							that.endDate = endDate
-							
+
 							uni.pageScrollTo({
 								scrollTop: 0,
 								duration: 100
 							});
-							
+
 							that.showToast("获取从" + startDate + "到" + endDate + "的日志成功", "success", "bottom")
 						} else {
 							that.isAllLog = true
 							that.startDate = moment(that.logList[that.logList.length - 1].ldate).format('YYYY-MM-DD')
 							that.endDate = moment(that.logList[0].ldate).format('YYYY-MM-DD')
-							
+
 							uni.pageScrollTo({
 								scrollTop: 0,
 								duration: 100
 							});
-							
+
 							that.showToast("获取所有用户日志成功", "success", "bottom")
 						}
 						that.isCale = false
-						
+
 						uni.hideLoading()
 					}
 				})
