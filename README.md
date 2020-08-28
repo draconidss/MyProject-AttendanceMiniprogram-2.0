@@ -24,11 +24,14 @@ Github
 
 此小程序获得了[2020中国微信官方小程序大赛](https://developers.weixin.qq.com/community/competition)华南赛区二等奖🎉
 
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/2020微信小程序应用开发赛华南赛区二等奖.jpg"/></div>
+
+
+
 > - 一等奖：5%
 > - 二等奖：10%
 > - 三等奖：15%
 >
-> 电子证书还没开放，后续再补充😅
 
 
 
