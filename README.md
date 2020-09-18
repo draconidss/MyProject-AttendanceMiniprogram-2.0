@@ -116,6 +116,14 @@ Github
 
 
 
+## 架构图
+
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/MyProject-AttendanceMiniprogram-2.0/images/readme/实验室出入管理小程序架构图.png"/></div>
+
+
+
+
+
 ## 4.1首页Home
 
 当进入页面时会判断你当前在哪个实验室，如果不在则可以**模拟选择教室进入**，模拟进入后会发送打卡通知
